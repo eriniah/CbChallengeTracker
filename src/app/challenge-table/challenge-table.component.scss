@@ -1,0 +1,38 @@
+
+.table-container {
+	height: 100%;
+	width: 100%;
+  	position: relative;
+
+  .challenge-grid {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+  }
+
+  ::ng-deep .grid-check {
+    font-size: 24px !important;
+  }
+
+}
+
+.group-header-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+
+  .group-header {
+    margin: 4px;
+
+  }
+
+  .group-buttons {
+    margin-right: 14px;
+
+  }
+}
+

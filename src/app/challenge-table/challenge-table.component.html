@@ -1,0 +1,95 @@
+<div class="table-container">
+	<dx-data-grid
+		class="challenge-grid"
+		[dataSource]="data">
+
+    <dxo-toolbar>
+      <dxi-item location="before" text="Conqueror's Blade Challenges"></dxi-item>
+      <dxi-item location="after" name="columnChooserButton"></dxi-item>
+    </dxo-toolbar>
+
+		<dxo-column-chooser [enabled]="true"></dxo-column-chooser>
+    <dxo-scrolling mode="infinite"></dxo-scrolling>
+    <dxo-filter-row [visible]="true"></dxo-filter-row>
+    <dxo-header-filter [visible]="true"></dxo-header-filter>
+    <dxo-group-panel [visible]="false" [allowColumnDragging]="false"></dxo-group-panel>
+
+    <dxi-column
+      caption="Season"
+      dataField="seasonId"
+      [groupIndex]="0"
+      groupCellTemplate="seasonGroupCellTemplate">
+    </dxi-column>
+    <div *dxTemplate="let data of 'seasonGroupCellTemplate'" class="group-header-container">
+      <h2 class="group-header">{{ getSeason(data.value)?.name }}</h2>
+      <div class="group-buttons" [title]="'Complete season ' + getSeason(data.value)?.name">
+        <a class="grid-check dx-link material-icons done_all"></a>
+      </div>
+    </div>
+
+    <dxi-column
+      caption="Section"
+      dataField="sectionId"
+      [groupIndex]="1"
+      groupCellTemplate="sectionGroupCellTemplate">
+    </dxi-column>
+    <div *dxTemplate="let data of 'sectionGroupCellTemplate'" class="group-header-container">
+      <h2 class="group-header">{{ getSection(data.value)?.name }}</h2>
+      <div class="group-buttons" [title]="'Complete section ' + getSection(data.value)?.name">
+        <a class="grid-check dx-link material-icons done_all"></a>
+      </div>
+    </div>
+
+    <dxi-column
+      caption="Stage"
+      dataField="stageId"
+      [groupIndex]="2"
+      groupCellTemplate="stageGroupCellTemplate">
+    </dxi-column>
+    <div *dxTemplate="let data of 'stageGroupCellTemplate'" class="group-header-container">
+      <h3 class="group-header">{{ getStage(data.value)?.name }}</h3>
+      <div class="group-buttons" [title]="'Complete stage ' + getStage(data.value)?.name">
+        <a class="grid-check dx-link material-icons done_all"></a>
+      </div>
+    </div>
+
+
+    <dxi-column
+			caption="Id"
+			dataField="id"
+			dataType="string"
+      [allowHeaderFiltering]="false"
+			[visible]="false">
+		</dxi-column>
+
+		<dxi-column
+			caption="Text"
+			dataField="text"
+			dataType="string"
+      [allowHeaderFiltering]="false">
+		</dxi-column>
+
+		<dxi-column
+			caption="Tags"
+      dataField="tags"
+      dataType="string"
+      cellTemplate="tagTemplate"
+      [allowHeaderFiltering]="true"
+      [calculateCellValue]="calculateTagsValue"
+      [calculateFilterExpression]="calculateTagsFilter"
+      [filterOperations]="['contains']">
+      <dxo-header-filter [dataSource]="ChallengeTags" searchMode="contains"></dxo-header-filter>
+		</dxi-column>
+
+    <div *dxTemplate="let data of 'tagTemplate'" class="challenge-tag-container">
+      <mat-chip-set>
+        <mat-chip *ngFor="let tag of data.data.tags">{{ tag }}</mat-chip>
+      </mat-chip-set>
+    </div>
+
+    <dxi-column type="buttons">
+      <dxi-button icon="check" cssClass="grid-check" hint="Complete Challenge"></dxi-button>
+    </dxi-column>
+
+	</dx-data-grid>
+</div>
