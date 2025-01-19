@@ -1,3 +1,3 @@
 # CbChallengeTracker
 
-Access the application [here](https://google.com)
+Access the application [here](https://eriniah.github.io/CbChallengeTracker/browser/)
