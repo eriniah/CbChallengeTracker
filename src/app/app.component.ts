@@ -12,9 +12,4 @@ import {MatIcon, MatIconRegistry} from "@angular/material/icon";
 export class AppComponent {
   title = 'CbChallengeTracker';
 
-  constructor(private readonly iconReg: MatIconRegistry) {
-    console.log(iconReg.getDefaultFontSetClass());
-
-  }
-
 }

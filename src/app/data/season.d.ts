@@ -1,4 +1,7 @@
 
+type Id = SeasonId | SectionId | StageId | ChallengeId;
+type IdType = 'SEASON' | 'SECTION' | 'STAGE' | 'CHALLENGE';
+
 type SeasonId = number;
 type SectionId = `${SeasonId}.${number}`;
 type StageId = `${SectionId}.${number}`;

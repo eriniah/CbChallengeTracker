@@ -1,10 +1,36 @@
 <div class="table-container">
 	<dx-data-grid
+    #grid
 		class="challenge-grid"
-		[dataSource]="data">
+		[dataSource]="data"
+    [rowAlternationEnabled]="true"
+    [allowColumnResizing]="true"
+    (onRowDblClick)="completeChallengeDblClick($event.data)">
 
     <dxo-toolbar>
+      <dxi-item location="before">
+        <dx-button
+          icon="info"
+          hint="Information"
+          (onClick)="InfoPopup.instance.show()">
+        </dx-button>
+      </dxi-item>
       <dxi-item location="before" text="Conqueror's Blade Challenges"></dxi-item>
+      <dxi-item location="after">
+        <dx-button
+          icon="undo"
+          hint="Undo completion"
+          [disabled]="this.sessionOrderedCompletions.isEmpty()"
+          (onClick)="undo()">
+        </dx-button>
+      </dxi-item>
+      <dxi-item location="after">
+        <dx-button
+          icon="refresh"
+          hint="Refresh Challenges"
+          (onClick)="grid.instance.refresh()">
+        </dx-button>
+      </dxi-item>
       <dxi-item location="after" name="columnChooserButton"></dxi-item>
     </dxo-toolbar>
 
@@ -13,30 +39,41 @@
     <dxo-filter-row [visible]="true"></dxo-filter-row>
     <dxo-header-filter [visible]="true"></dxo-header-filter>
     <dxo-group-panel [visible]="false" [allowColumnDragging]="false"></dxo-group-panel>
+    <dxo-grouping [allowCollapsing]="true"></dxo-grouping>
 
     <dxi-column
       caption="Season"
       dataField="seasonId"
+      width="85px"
+      [allowHeaderFiltering]="true"
+      [allowFiltering]="false"
+      [showWhenGrouped]="true"
       [groupIndex]="0"
       groupCellTemplate="seasonGroupCellTemplate">
+      <dxo-header-filter [dataSource]="seasons" [allowSearch]="true"></dxo-header-filter>
     </dxi-column>
     <div *dxTemplate="let data of 'seasonGroupCellTemplate'" class="group-header-container">
       <h2 class="group-header">{{ getSeason(data.value)?.name }}</h2>
       <div class="group-buttons" [title]="'Complete season ' + getSeason(data.value)?.name">
-        <a class="grid-check dx-link material-icons done_all"></a>
+        <a class="grid-check dx-link material-icons done_all" (click)="completeGrouped(data)"></a>
       </div>
     </div>
 
     <dxi-column
       caption="Section"
       dataField="sectionId"
+      width="85px"
+      [allowHeaderFiltering]="true"
+      [allowFiltering]="false"
+      [showWhenGrouped]="true"
       [groupIndex]="1"
       groupCellTemplate="sectionGroupCellTemplate">
+      <dxo-header-filter [dataSource]="sections" [allowSearch]="true"></dxo-header-filter>
     </dxi-column>
     <div *dxTemplate="let data of 'sectionGroupCellTemplate'" class="group-header-container">
       <h2 class="group-header">{{ getSection(data.value)?.name }}</h2>
       <div class="group-buttons" [title]="'Complete section ' + getSection(data.value)?.name">
-        <a class="grid-check dx-link material-icons done_all"></a>
+        <a class="grid-check dx-link material-icons done_all" (click)="completeGrouped(data)"></a>
       </div>
     </div>
 
@@ -47,9 +84,12 @@
       groupCellTemplate="stageGroupCellTemplate">
     </dxi-column>
     <div *dxTemplate="let data of 'stageGroupCellTemplate'" class="group-header-container">
-      <h3 class="group-header">{{ getStage(data.value)?.name }}</h3>
+      <h3 class="group-header">
+        ( {{ (getStage(data.value)?.challenges?.length ?? 0) - (data?.data?.items?.length ?? 0) }} / {{ getStage(data.value)?.required }} )
+        {{ getStage(data.value)?.name }}
+      </h3>
       <div class="group-buttons" [title]="'Complete stage ' + getStage(data.value)?.name">
-        <a class="grid-check dx-link material-icons done_all"></a>
+        <a class="grid-check dx-link material-icons done_all" (click)="completeGrouped(data)"></a>
       </div>
     </div>
 
@@ -88,8 +128,36 @@
     </div>
 
     <dxi-column type="buttons">
-      <dxi-button icon="check" cssClass="grid-check" hint="Complete Challenge"></dxi-button>
+      <dxi-button icon="check" cssClass="grid-check" hint="Complete Challenge" [onClick]="completeChallenge"></dxi-button>
     </dxi-column>
 
 	</dx-data-grid>
 </div>
+
+<dx-popup
+  #InfoPopup
+  title="Information"
+  [showCloseButton]="true"
+  height="80vh"
+  width="80vw">
+  <pre class="info-text">
+    <h1 style="margin-top: 0">Conqueror's Blade Challenge Tracker</h1>
+    A simple app to track your Conqueror's Blade Challenges.
+
+    This app allows you to mark challenges, stages, sections (units/weapons) and seasons as complete so that they are hidden from view.
+    You can then use the filter and sort functionality to quickly search for available challenges based on the content you are playing.
+
+    <h2>Usage</h2>
+    Either click the <mat-icon [inline]="true">check</mat-icon> icon or double click a row to complete the challenge. You may complete an individual challenge or an entire stage, section, or season at a time.
+
+    You can use the <mat-icon [inline]="true">undo</mat-icon> button in the toolbar to undo actions that have been taken. Note that this is only tracked during the current session unlike challenge progress which is persisted.
+
+    <h2>Progress</h2>
+    Progress is saved in your browser storage so it will persist through sessions.
+
+    TODO: Import/Export feature to backup progress
+
+    <h2>Notes</h2>
+    Many thanks to "&#64;lx__" who gathered and formatted the data <a class="text-link" href="https://jsp.ellpeck.de/#03120789">on this site</a> which is where I pulled the data from.
+  </pre>
+</dx-popup>
