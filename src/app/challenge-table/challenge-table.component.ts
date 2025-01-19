@@ -8,15 +8,30 @@ import {MatIconButton} from "@angular/material/button";
 import ArrayStore from "devextreme/data/array_store";
 import DevExpress from "devextreme";
 import LoadOptions = DevExpress.data.LoadOptions;
-import {CompletedChallenges} from "../data/season-utils";
+import {
+  CompletedChallenges,
+  CompletedChallengesFilterOptions,
+  defaultCompletedChallengesFilterOptions,
+} from "../data/season-utils";
 import {Stack} from "../utils/collections";
 import {ColumnButtonClickEvent} from "devextreme/ui/data_grid";
 import {CompletedStorageKey, LocalStorageService} from "../store/local-storage.service";
 import {Subscription} from "rxjs";
+import {GlobalOptionsComponent} from "./global-options/global-options.component";
 
 @Component({
   selector: 'app-challenge-table',
-  imports: [CommonModule, DxDataGridModule, DxTagBoxModule, MatChipsModule, MatIcon, MatIconButton, DxButtonModule, DxPopupModule],
+  imports: [
+    CommonModule,
+    DxDataGridModule,
+    DxTagBoxModule,
+    MatChipsModule,
+    MatIcon,
+    MatIconButton,
+    DxButtonModule,
+    DxPopupModule,
+    GlobalOptionsComponent
+  ],
   templateUrl: './challenge-table.component.html',
   styleUrl: './challenge-table.component.scss',
   standalone: true
@@ -27,6 +42,8 @@ export class ChallengeTableComponent implements OnInit, OnDestroy {
 
   @Input() completed: CompletedChallenges = new CompletedChallenges();
   @Output() completedChange = new EventEmitter<CompletedChallenges>();
+
+  filterOptions: CompletedChallengesFilterOptions = defaultCompletedChallengesFilterOptions();
 
   data!: ArrayStore<GridChallenge, ChallengeId>;
   seasons!: { text: string, value: SeasonId }[];
@@ -45,28 +62,30 @@ export class ChallengeTableComponent implements OnInit, OnDestroy {
       this.completed = new CompletedChallenges(storedProgress);
     }
 
-    this.data = new ArrayStore<GridChallenge, ChallengeId>({
-      data: this.seasonService.challenges,
-      key: 'id',
-      onLoading: (loadOptions: LoadOptions<GridChallenge>) => {
-        if (!this.completed.isEmpty()) {
-          if (loadOptions.filter) {
-            loadOptions.filter = [
-              loadOptions.filter,
-              'and',
-              this.completed.createDxFilter()
-            ]
-          } else {
-            loadOptions.filter = this.completed.createDxFilter();
-          }
-        }
-      }
-    });
     this.seasons = this.seasonService.seasons.map(season => ({ text: season.name, value: season.id }));
     this.sections = this.seasonService.sections.map(section => ({ text: section.name, value: section.id }));
     this._subs.add(this.completedChange.subscribe(c =>
       this.localStorage.put(CompletedStorageKey, c)
     ));
+
+    this.data = new ArrayStore<GridChallenge, ChallengeId>({
+      data: this.seasonService.challenges,
+      key: 'id',
+      onLoading: (loadOptions: LoadOptions<GridChallenge>) => {
+        const challFilter = this.completed.createDxFilter(this.seasonService, this.filterOptions);
+        if (challFilter && 0 < challFilter.length) {
+          if (loadOptions.filter) {
+              loadOptions.filter = [
+                loadOptions.filter,
+                'and',
+                challFilter
+              ];
+          } else {
+            loadOptions.filter = challFilter;
+          }
+        }
+      }
+    });
   }
 
   ngOnDestroy(): void {

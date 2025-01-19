@@ -30,7 +30,6 @@ export class SeasonService {
   private readonly _challengeMap = new Map<ChallengeId, GridChallenge>();
 
   constructor() {
-
     (seasonsJson as Season[]).forEach(season => {
       this._seasonMap.set(season.id, season);
 

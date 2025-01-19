@@ -1,0 +1,26 @@
+<div class="options">
+  <dx-form [(formData)]="options">
+    <dxi-item
+      dataField="challenges"
+      editorType="dxSelectBox"
+      [editorOptions]="{
+        dataSource: challenges,
+        displayExpr: 'text',
+        valueExpr: 'value',
+        onValueChanged: onValueChanged
+      }"
+    >
+    </dxi-item>
+    <dxi-item
+      dataField="stages"
+      editorType="dxSelectBox"
+      [editorOptions]="{
+        items: stages,
+        displayExpr: 'text',
+        valueExpr: 'value',
+        onValueChanged: onValueChanged
+      }"
+    >
+    </dxi-item>
+  </dx-form>
+</div>

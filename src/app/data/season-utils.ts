@@ -1,3 +1,4 @@
+import {SeasonService} from "./season.service";
 
 const seasonIdRegex = /^(\d+)/;
 const sectionIdRegex = /^(\d+\.\d+)/;
@@ -71,6 +72,18 @@ export function isInStage(stageIds: Set<StageId>, childId: ChallengeId): boolean
   return stageIds.has(stageIdFrom(childId));
 }
 
+export interface CompletedChallengesFilterOptions {
+  challenges: 'all' | 'incomplete';
+  stages: 'next' | 'incomplete';
+}
+
+export function defaultCompletedChallengesFilterOptions(): CompletedChallengesFilterOptions {
+  return {
+    challenges: 'incomplete',
+    stages: 'next'
+  }
+}
+
 export class CompletedChallenges {
   seasonIds: Set<SeasonId> = new Set<SeasonId>();
   sectionIds: Set<SectionId> = new Set<SectionId>();
@@ -137,10 +150,14 @@ export class CompletedChallenges {
     }
   }
 
-  createDxFilter(): any[] {
+  createDxFilter(seasonService: SeasonService, options: CompletedChallengesFilterOptions): any[] | undefined {
     const filters: any[] = [];
 
     const newIdFilter = (key: string, id: Id) => [key, '<>', id];
+
+    if (options.challenges === 'all') {
+      return [];
+    }
 
     this.seasonIds.forEach(id => {
       filters.push(newIdFilter('seasonId', id), 'and');
@@ -150,11 +167,39 @@ export class CompletedChallenges {
         filters.push(newIdFilter('sectionId', id), 'and');
       }
     });
-    this.stageIds.forEach(id => {
-      if (!isInSeason(this.seasonIds, id) && !isInSection(this.sectionIds, id)) {
-        filters.push(newIdFilter('stageId', id), 'and');
-      }
-    });
+
+    /* Two modes for stages
+     * 1. Default only shows the current stage per section if the season/section isn't over
+     * 2. All unfinished sections are shown
+     */
+    if (options.stages === 'next') {
+      const stages: any[] = [];
+      seasonService.seasons.forEach(season => {
+        if (!this.seasonIds.has(season.id)) {
+          season.sections.forEach(section => {
+            if (!this.sectionIds.has(section.id)) {
+              const stage = section.stages.find(stage =>
+                !this.stageIds.has(stage.id)
+                && stage.challenges.find(challenge => !this.challengeIds.has(challenge.id))
+              );
+              if (stage) {
+                stages.push(['stageId', '=', stage.id], 'or');
+              }
+            }
+          });
+        }
+      });
+      stages.pop();
+      filters.push(stages);
+      filters.push('and');
+    } else {
+      this.stageIds.forEach(id => {
+        if (!isInSeason(this.seasonIds, id) && !isInSection(this.sectionIds, id)) {
+          filters.push(newIdFilter('stageId', id), 'and');
+        }
+      });
+    }
+
     this.challengeIds.forEach(id => {
       if (!isInSeason(this.seasonIds, id) && !isInSection(this.sectionIds, id) && !isInStage(this.stageIds, id)) {
         filters.push(newIdFilter('id', id), 'and');
