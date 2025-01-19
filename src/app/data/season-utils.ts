@@ -176,12 +176,12 @@ export class CompletedChallenges {
       const stages: any[] = [];
       seasonService.seasons.forEach(season => {
         if (!this.seasonIds.has(season.id)) {
-          season.sections.forEach(section => {
+          season.sections.filter(section => {
+            const stage: Stage | undefined = section.requiredStage ? seasonService.getStage(section.requiredStage) : undefined;
+            return !stage || this.isStageComplete(stage);
+          }).forEach(section => {
             if (!this.sectionIds.has(section.id)) {
-              const stage = section.stages.find(stage =>
-                !this.stageIds.has(stage.id)
-                && stage.challenges.find(challenge => !this.challengeIds.has(challenge.id))
-              );
+              const stage = section.stages.find(stage => !this.isStageComplete(stage));
               if (stage) {
                 stages.push(['stageId', '=', stage.id], 'or');
               }
@@ -211,6 +211,11 @@ export class CompletedChallenges {
     }
 
     return filters;
+  }
+
+  private isStageComplete(stage: Stage): boolean {
+    return this.stageIds.has(stage.id)
+      || !stage.challenges.find(challenge => !this.challengeIds.has(challenge.id));
   }
 
   toJSON(): object {

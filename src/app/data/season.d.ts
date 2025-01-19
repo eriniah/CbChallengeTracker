@@ -17,6 +17,7 @@ interface Section {
   id: SectionId;
   name: string;
   stages: Stage[];
+  requiredStage?: StageId;
 }
 
 interface Stage {
@@ -51,4 +52,15 @@ interface GridChallenge extends Challenge {
   seasonId: SeasonId;
   sectionId: SectionId;
   stageId: StageId;
+}
+
+// seasons.json
+interface ManualSeasonConfig {
+  id: SeasonId;
+  sections: ManualSectionConfig[];
+}
+
+interface ManualSectionConfig {
+  id: SectionId;
+  requiredStage?: StageId;
 }

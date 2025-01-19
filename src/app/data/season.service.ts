@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
-import seasonsJson from '../../data/challenges.json';
+import generatedSeasonsJson from '../../data/challenges.json';
+import manualSeasonsJson from '../../data/season.json';
 
 
 export const ChallengeTags = [
@@ -30,12 +31,22 @@ export class SeasonService {
   private readonly _challengeMap = new Map<ChallengeId, GridChallenge>();
 
   constructor() {
-    (seasonsJson as Season[]).forEach(season => {
+    const requiredStageMap = new Map<SectionId, StageId>();
+    (manualSeasonsJson as ManualSeasonConfig[]).forEach(season => {
+      season.sections.forEach(section => {
+        if (section.requiredStage) {
+          requiredStageMap.set(section.id, section.requiredStage);
+        }
+      });
+    });
+
+    (generatedSeasonsJson as Season[]).forEach(season => {
       this._seasonMap.set(season.id, season);
 
       season.sections.forEach(section => {
         this._sectionMap.set(section.id, section);
         this.sections.push(section);
+        section.requiredStage = requiredStageMap.get(section.id);
 
         section.stages.flatMap(stage => {
           this._stageMap.set(stage.id, stage);
