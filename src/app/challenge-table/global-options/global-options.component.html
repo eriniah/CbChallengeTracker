@@ -23,4 +23,11 @@
     >
     </dxi-item>
   </dx-form>
+
+  <div class="import-export">
+    <button class="reset" mat-button (click)="resetData()">Reset</button>
+    <dx-text-box #importTextBox [(value)]="importText" placeholder="Paste import data here"></dx-text-box>
+    <button mat-button (click)="importData(importTextBox)">Import</button>
+    <button mat-button [cdkCopyToClipboard]="getExportData()" (cdkCopyToClipboardCopied)="notifyCopied()">Export</button>
+  </div>
 </div>

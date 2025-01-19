@@ -1,6 +1,13 @@
 import {Component, EventEmitter, Input, OnDestroy, OnInit, Output, ViewChild} from '@angular/core';
 import {ChallengeTags, SeasonService} from '../data/season.service';
-import {DxButtonModule, DxDataGridComponent, DxDataGridModule, DxPopupModule, DxTagBoxModule} from 'devextreme-angular';
+import {
+  DxButtonModule,
+  DxDataGridComponent,
+  DxDataGridModule,
+  DxPopupComponent,
+  DxPopupModule,
+  DxTagBoxModule
+} from 'devextreme-angular';
 import {CommonModule} from "@angular/common";
 import {MatChipsModule} from "@angular/material/chips";
 import {MatIcon} from "@angular/material/icon";
@@ -38,6 +45,8 @@ import {GlobalOptionsComponent} from "./global-options/global-options.component"
 })
 export class ChallengeTableComponent implements OnInit, OnDestroy {
   @ViewChild(DxDataGridComponent) challengeGrid!: DxDataGridComponent;
+  @ViewChild('OptionsPopup') optionsPopup!: DxPopupComponent;
+
   protected readonly ChallengeTags: { text: string, value: string }[] = ChallengeTags.map(tag => ({ text: tag, value: tag }));
 
   @Input() completed: CompletedChallenges = new CompletedChallenges();
@@ -148,5 +157,16 @@ export class ChallengeTableComponent implements OnInit, OnDestroy {
       this.completedChange.emit(this.completed);
     }
     this.challengeGrid.instance.refresh();
+  }
+
+  handleImport(data: CompletedChallenges): void {
+    this.optionsPopup.instance.hide();
+    this.completed = new CompletedChallenges(data);
+    this.completedChange.emit(this.completed);
+    this.challengeGrid.instance.refresh();
+  }
+
+  handleReset(): void {
+    this.handleImport(new CompletedChallenges());
   }
 }

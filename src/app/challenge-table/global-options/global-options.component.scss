@@ -1,0 +1,25 @@
+@use 'styles' as styles;
+@use '@angular/material' as mat;
+
+.options {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+
+  .import-export {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: right;
+
+    .reset {
+      margin-right: auto;
+      color: mat.get-theme-color(styles.$my-theme, 'warn');
+
+    }
+
+  }
+
+}

@@ -164,6 +164,11 @@
 
     TODO: Import/Export feature to backup progress
 
+    <h2>Known Issues</h2>
+    1. Seasons 2 through 5 are not configured to filter out purple/gold units until the required units are unlocked. These seasons are a mess so I skipped them
+    2. Weapon Challenges (Pike, Maul, Chainblade, etc.) are not included. These challenges were not available from where I pulled the data.
+        a. If you have the data for these, please create a git issue and post the challenge data
+
     <h2>Notes</h2>
     Many thanks to "&#64;lx__" who gathered and formatted the data <a class="text-link" href="https://jsp.ellpeck.de/#03120789">on this site</a> which is where I pulled the data from.
   </pre>
@@ -178,6 +183,8 @@
   minWidth="400px">
   <app-global-options
     [options]="filterOptions"
+    (onImport)="handleImport($event)"
+    (onReset)="handleReset()"
     (valueChanged)="this.grid.instance.refresh()">
   </app-global-options>
 </dx-popup>
