@@ -214,7 +214,9 @@ export class CompletedChallenges {
   }
 
   private isStageComplete(stage: Stage): boolean {
-    return this.stageIds.has(stage.id)
+    return this.seasonIds.has(seasonIdFrom(stage.id))
+      || this.sectionIds.has(sectionIdFrom(stage.id))
+      || this.stageIds.has(stage.id)
       || !stage.challenges.find(challenge => !this.challengeIds.has(challenge.id));
   }
 
