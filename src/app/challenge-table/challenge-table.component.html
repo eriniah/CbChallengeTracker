@@ -12,23 +12,26 @@
         <dx-button
           icon="info"
           hint="Information"
+          [elementAttr]="{ class: 'primary-button' }"
           (onClick)="InfoPopup.instance.show()">
         </dx-button>
       </dxi-item>
       <dxi-item location="before" text="Conqueror's Blade Challenges"></dxi-item>
       <dxi-item location="after">
         <dx-button
-          icon="optionsgear"
-          hint="More Options"
-          (onClick)="OptionsPopup.instance.show()">
+          icon="undo"
+          hint="Undo completion"
+          [elementAttr]="{ class: 'primary-button' }"
+          [disabled]="this.sessionOrderedCompletions.isEmpty()"
+          (onClick)="undo()">
         </dx-button>
       </dxi-item>
       <dxi-item location="after">
         <dx-button
-          icon="undo"
-          hint="Undo completion"
-          [disabled]="this.sessionOrderedCompletions.isEmpty()"
-          (onClick)="undo()">
+          icon="optionsgear"
+          hint="More Options"
+          [elementAttr]="{ class: 'primary-button' }"
+          (onClick)="OptionsPopup.instance.show()">
         </dx-button>
       </dxi-item>
       <dxi-item location="after">
@@ -159,15 +162,21 @@
 
     You can use the <mat-icon [inline]="true">undo</mat-icon> button in the toolbar to undo actions that have been taken. Note that this is only tracked during the current session unlike challenge progress which is persisted.
 
+    When filtering for challenges, only the stages you have prerequisites for will be displayed. For instance, if you are on stage 1 of Spartan's Chosen you will not see stage 2. Additionally, if you don't have Laconic Javelins, you will not see any stages for Spartan's Chosen. This behavior can be changed in the more options menu by clicking the <mat-icon [inline]="true">settings</mat-icon> button.
+
     <h2>Progress</h2>
     Progress is saved in your browser storage so it will persist through sessions.
 
-    TODO: Import/Export feature to backup progress
+    If you would like to backup your data, the more options dialog has import/export functionality.
 
     <h2>Known Issues</h2>
     1. Seasons 2 through 5 are not configured to filter out purple/gold units until the required units are unlocked. These seasons are a mess so I skipped them
     2. Weapon Challenges (Pike, Maul, Chainblade, etc.) are not included. These challenges were not available from where I pulled the data.
         a. If you have the data for these, please create a git issue and post the challenge data
+    3. Various spelling errors
+
+    <h2>Helping Out</h2>
+    If you see something that is wrong or needs correction, please submit a new <a class="text-link" href="(https://github.com/eriniah/CbChallengeTracker/issues/new?template=Blank+issue)">github issue</a> or open a PR with the fix
 
     <h2>Notes</h2>
     Many thanks to "&#64;lx__" who gathered and formatted the data <a class="text-link" href="https://jsp.ellpeck.de/#03120789">on this site</a> which is where I pulled the data from.
