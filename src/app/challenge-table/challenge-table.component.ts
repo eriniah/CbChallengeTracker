@@ -16,6 +16,7 @@ import ArrayStore from "devextreme/data/array_store";
 import DevExpress from "devextreme";
 import LoadOptions = DevExpress.data.LoadOptions;
 import {
+  CompletedChallengeException,
   CompletedChallenges,
   CompletedChallengesFilterOptions,
   defaultCompletedChallengesFilterOptions,
@@ -25,6 +26,7 @@ import {ColumnButtonClickEvent} from "devextreme/ui/data_grid";
 import {CompletedStorageKey, LocalStorageService} from "../store/local-storage.service";
 import {Subscription} from "rxjs";
 import {GlobalOptionsComponent} from "./global-options/global-options.component";
+import {MatSnackBar} from "@angular/material/snack-bar";
 
 @Component({
   selector: 'app-challenge-table',
@@ -62,19 +64,27 @@ export class ChallengeTableComponent implements OnInit, OnDestroy {
   private _subs = new Subscription();
 
   constructor(private readonly seasonService: SeasonService,
-              private readonly localStorage: LocalStorageService) {
+              private readonly localStorage: LocalStorageService,
+              private readonly snackbar: MatSnackBar) {
   }
 
   ngOnInit(): void {
-    const storedProgress = this.localStorage.get(CompletedStorageKey);
-    if (storedProgress) {
-      this.completed = new CompletedChallenges(storedProgress);
+    try {
+      const storedProgress = this.localStorage.get(CompletedStorageKey);
+      if (storedProgress) {
+        this.completed = new CompletedChallenges(storedProgress);
+      }
+    } catch (ex: unknown) {
+      if (ex instanceof Error) {
+        this.snackbar.open(`Failed to read import data: ${ex.message}. Resetting Progress...`);
+      }
+      this.completed = new CompletedChallenges();
     }
 
     this.seasons = this.seasonService.seasons.map(season => ({ text: season.name, value: season.id }));
     this.sections = this.seasonService.sections.map(section => ({ text: section.name, value: section.id }));
     this._subs.add(this.completedChange.subscribe(c =>
-      this.localStorage.put(CompletedStorageKey, c)
+      this.localStorage.put(CompletedStorageKey, c.toJSON())
     ));
 
     this.data = new ArrayStore<GridChallenge, ChallengeId>({
@@ -161,7 +171,7 @@ export class ChallengeTableComponent implements OnInit, OnDestroy {
 
   handleImport(data: CompletedChallenges): void {
     this.optionsPopup.instance.hide();
-    this.completed = new CompletedChallenges(data);
+    this.completed = data;
     this.completedChange.emit(this.completed);
     this.challengeGrid.instance.refresh();
   }

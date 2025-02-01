@@ -1,8 +1,19 @@
 # Changes After Generation
 
-* Collapse 10.2.0.12 into 10.2.0.11
-* Collapse 11.0.0.5 into 11.0.0.4 and move others up
-* Fix wording on 13.2.3.6. You or your group members
-* Fix wording on 14.0.2.5. You or your group members
-* Delete 22.2.6.5 and move others up
+## Generation Fixes
 
+* Collapse 10.3.1.13 into 10.3.1.12
+* Collapse 11.1.1.6 into 11.1.1.5 and move others up
+* Fix wording on 13.3.4.7. You or your group members
+* Fix wording on 14.1.3.6. You or your group members
+* Delete 22.3.7.6 and move others up
+* Section 18.1 rename to Caradoc's Cavalry
+
+
+## Need Additions
+
+* Weapon Sections
+  * Maul
+  * Pike
+  * Chain-blade
+  * Spear & shield

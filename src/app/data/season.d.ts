@@ -7,6 +7,8 @@ type SectionId = `${SeasonId}.${number}`;
 type StageId = `${SectionId}.${number}`;
 type ChallengeId = `${StageId}.${number}`;
 
+type CompletedChallengeVersion = 1 | 2;
+
 interface Season {
   id: SeasonId;
   name: string;
@@ -17,7 +19,12 @@ interface Section {
   id: SectionId;
   name: string;
   stages: Stage[];
-  requiredStage?: StageId;
+  requiredStage?: SectionRequiredStages;
+}
+
+interface SectionRequiredStages {
+  "operator": 'single' | 'and' | 'or';
+  "stages": StageId[];
 }
 
 interface Stage {
@@ -62,5 +69,5 @@ interface ManualSeasonConfig {
 
 interface ManualSectionConfig {
   id: SectionId;
-  requiredStage?: StageId;
+  requiredStage?: StageId | SectionRequiredStages;
 }

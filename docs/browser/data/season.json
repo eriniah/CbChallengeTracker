@@ -1,14 +1,93 @@
 [
   {
+    "id": 2,
+    "sections": [
+      {
+        "id": "2.4",
+        "requiredStage": {
+          "operator": "or",
+          "stages": ["2.1.2", "2.2.2", "2.3.2"]
+        }
+      },
+      {
+        "id": "2.5",
+        "requiredStage": {
+          "operator": "or",
+          "stages": ["2.1.2", "2.2.2", "2.3.2"]
+        }
+      },
+      {
+        "id": "2.6",
+        "requiredStage": {
+          "operator": "or",
+          "stages": ["2.4.4", "2.5.4"]
+        }
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "sections": [
+      {
+        "id": "3.2",
+        "requiredStage": "3.1.2"
+      },
+      {
+        "id": "3.3",
+        "requiredStage": "3.2.3"
+      },
+      {
+        "id": "3.4",
+        "requiredStage": "3.1.2"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "sections": [
+      {
+        "id": "4.2",
+        "requiredStage": "4.1.2"
+      },
+      {
+        "id": "4.3",
+        "requiredStage": {
+          "operator": "or",
+          "stages": ["4.2.3", "4.5.3"]
+        }
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "sections": [
+      {
+        "id": "5.2",
+        "requiredStage": "5.1.2"
+      },
+      {
+        "id": "5.3",
+        "requiredStage": "5.1.2"
+      },
+      {
+        "id": "5.4",
+        "requiredStage": {
+          "operator": "or",
+          "stages": ["5.2.3", "5.3.3"]
+        }
+      }
+    ]
+  },
+  {
     "id": 6,
     "sections": [
       {
-        "id": "6.1",
-        "requiredStage": "6.0.1"
-      },
-      {
         "id": "6.2",
         "requiredStage": "6.1.2"
+      },
+      {
+        "id": "6.3",
+        "requiredStage": "6.2.3"
       }
     ]
   },
@@ -16,12 +95,12 @@
     "id": 7,
     "sections": [
       {
-        "id": "7.1",
-        "requiredStage": "7.0.1"
-      },
-      {
         "id": "7.2",
         "requiredStage": "7.1.2"
+      },
+      {
+        "id": "7.3",
+        "requiredStage": "7.2.3"
       }
     ]
   },
@@ -29,12 +108,12 @@
     "id": 8,
     "sections": [
       {
-        "id": "8.1",
-        "requiredStage": "8.0.1"
-      },
-      {
         "id": "8.2",
         "requiredStage": "8.1.2"
+      },
+      {
+        "id": "8.3",
+        "requiredStage": "8.2.3"
       }
     ]
   },
@@ -42,12 +121,12 @@
     "id": 9,
     "sections": [
       {
-        "id": "9.1",
-        "requiredStage": "9.0.1"
-      },
-      {
         "id": "9.2",
         "requiredStage": "9.1.2"
+      },
+      {
+        "id": "9.3",
+        "requiredStage": "9.2.2"
       }
     ]
   },
@@ -55,12 +134,12 @@
     "id": 10,
     "sections": [
       {
-        "id": "10.1",
-        "requiredStage": "10.0.1"
-      },
-      {
         "id": "10.2",
         "requiredStage": "10.1.2"
+      },
+      {
+        "id": "10.3",
+        "requiredStage": "10.2.3"
       }
     ]
   },
@@ -68,12 +147,12 @@
     "id": 11,
     "sections": [
       {
-        "id": "11.1",
-        "requiredStage": "11.0.1"
-      },
-      {
         "id": "11.2",
         "requiredStage": "11.1.2"
+      },
+      {
+        "id": "11.3",
+        "requiredStage": "11.2.3"
       }
     ]
   },
@@ -81,8 +160,8 @@
     "id": 12,
     "sections": [
       {
-        "id": "12.1",
-        "requiredStage": "12.0.2"
+        "id": "12.2",
+        "requiredStage": "12.1.3"
       }
     ]
   },
@@ -90,12 +169,12 @@
     "id": 13,
     "sections": [
       {
-        "id": "13.1",
-        "requiredStage": "13.0.1"
-      },
-      {
         "id": "13.2",
         "requiredStage": "13.1.2"
+      },
+      {
+        "id": "13.3",
+        "requiredStage": "13.2.3"
       }
     ]
   },
@@ -103,12 +182,12 @@
     "id": 14,
     "sections": [
       {
-        "id": "14.1",
-        "requiredStage": "14.0.1"
-      },
-      {
         "id": "14.2",
         "requiredStage": "14.1.2"
+      },
+      {
+        "id": "14.3",
+        "requiredStage": "14.2.3"
       }
     ]
   },
@@ -116,12 +195,12 @@
     "id": 15,
     "sections": [
       {
-        "id": "15.1",
-        "requiredStage": "15.0.1"
-      },
-      {
         "id": "15.2",
         "requiredStage": "15.1.2"
+      },
+      {
+        "id": "15.3",
+        "requiredStage": "15.2.3"
       }
     ]
   },
@@ -129,12 +208,12 @@
     "id": 16,
     "sections": [
       {
-        "id": "16.1",
-        "requiredStage": "16.0.1"
-      },
-      {
         "id": "16.2",
         "requiredStage": "16.1.2"
+      },
+      {
+        "id": "16.3",
+        "requiredStage": "16.2.3"
       }
     ]
   },
@@ -142,12 +221,12 @@
     "id": 17,
     "sections": [
       {
-        "id": "17.1",
-        "requiredStage": "17.0.1"
-      },
-      {
         "id": "17.2",
         "requiredStage": "17.1.2"
+      },
+      {
+        "id": "17.3",
+        "requiredStage": "17.2.3"
       }
     ]
   },
@@ -155,12 +234,12 @@
     "id": 18,
     "sections": [
       {
-        "id": "18.1",
-        "requiredStage": "18.0.1"
-      },
-      {
         "id": "18.2",
         "requiredStage": "18.1.2"
+      },
+      {
+        "id": "18.3",
+        "requiredStage": "18.2.3"
       }
     ]
   },
@@ -168,12 +247,12 @@
     "id": 19,
     "sections": [
       {
-        "id": "19.1",
-        "requiredStage": "19.0.1"
-      },
-      {
         "id": "19.2",
         "requiredStage": "19.1.2"
+      },
+      {
+        "id": "19.3",
+        "requiredStage": "19.2.3"
       }
     ]
   },
@@ -181,12 +260,12 @@
     "id": 20,
     "sections": [
       {
-        "id": "20.1",
-        "requiredStage": "20.0.1"
-      },
-      {
         "id": "20.2",
         "requiredStage": "20.1.2"
+      },
+      {
+        "id": "20.3",
+        "requiredStage": "20.2.3"
       }
     ]
   },
@@ -194,12 +273,12 @@
     "id": 21,
     "sections": [
       {
-        "id": "21.1",
-        "requiredStage": "21.0.1"
-      },
-      {
         "id": "21.2",
         "requiredStage": "21.1.2"
+      },
+      {
+        "id": "21.3",
+        "requiredStage": "21.2.3"
       }
     ]
   },
@@ -207,12 +286,12 @@
     "id": 22,
     "sections": [
       {
-        "id": "22.1",
-        "requiredStage": "22.0.1"
-      },
-      {
         "id": "22.2",
         "requiredStage": "22.1.2"
+      },
+      {
+        "id": "22.3",
+        "requiredStage": "22.2.3"
       }
     ]
   }

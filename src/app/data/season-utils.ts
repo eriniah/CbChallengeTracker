@@ -84,6 +84,17 @@ export function defaultCompletedChallengesFilterOptions(): CompletedChallengesFi
   }
 }
 
+export const completedChallengeCurrentVersion: CompletedChallengeVersion = 2;
+
+export class CompletedChallengeException extends Error {
+  constructor(
+    public readonly version: CompletedChallengeVersion,
+    message: string
+    ) {
+    super(message);
+  }
+}
+
 export class CompletedChallenges {
   seasonIds: Set<SeasonId> = new Set<SeasonId>();
   sectionIds: Set<SectionId> = new Set<SectionId>();
@@ -92,6 +103,10 @@ export class CompletedChallenges {
 
   constructor(data?: any) {
     if (data) {
+      if (!data.v) {
+        throw new CompletedChallengeException(1, "Pre-release data conversion not available");
+      }
+
       this.seasonIds = new Set<SeasonId>(data.seasonIds);
       this.sectionIds = new Set<SectionId>(data.sectionIds);
       this.stageIds = new Set<StageId>(data.stageIds);
@@ -177,8 +192,36 @@ export class CompletedChallenges {
       seasonService.seasons.forEach(season => {
         if (!this.seasonIds.has(season.id)) {
           season.sections.filter(section => {
-            const stage: Stage | undefined = section.requiredStage ? seasonService.getStage(section.requiredStage) : undefined;
-            return !stage || this.isStageComplete(stage);
+            if (!section.requiredStage?.stages || section.requiredStage.stages.length === 0) {
+              return true;
+            }
+
+            const requiredStages: Stage[] = section.requiredStage.stages
+              .map(id => seasonService.getStage(id))
+              .filter(v => v !== undefined) as Stage[];
+
+            if (requiredStages.length === 0) {
+              return true;
+            }
+
+            switch (section.requiredStage.operator) {
+              case "single":
+                return this.isStageComplete(requiredStages[0]);
+              case "and":
+                return requiredStages.reduce((prev, curr) => prev && this.isStageComplete(curr), true);
+              case "or":
+                // Spelled out cause we had some debugging issues
+                let temp = false;
+                temp = temp || requiredStages.length === 0;
+                temp = temp || requiredStages.reduce((prev, curr) => {
+                  const comp = this.isStageComplete(curr)
+                  return prev || comp;
+                }, false);
+                return temp;
+              default:
+                console.log('Section has unhandled rules. Defaulting to show ', section);
+                return true;
+            }
           }).forEach(section => {
             if (!this.sectionIds.has(section.id)) {
               const stage = section.stages.find(stage => !this.isStageComplete(stage));
@@ -217,11 +260,12 @@ export class CompletedChallenges {
     return this.seasonIds.has(seasonIdFrom(stage.id))
       || this.sectionIds.has(sectionIdFrom(stage.id))
       || this.stageIds.has(stage.id)
-      || !stage.challenges.find(challenge => !this.challengeIds.has(challenge.id));
+      || stage.required <= stage.challenges.filter(challenge => this.challengeIds.has(challenge.id)).length;
   }
 
   toJSON(): object {
     return {
+      v: completedChallengeCurrentVersion,
       seasonIds: Array.from(this.seasonIds.values()),
       sectionIds: Array.from(this.sectionIds.values()),
       stageIds: Array.from(this.stageIds.values()),
@@ -229,4 +273,10 @@ export class CompletedChallenges {
     };
   }
 
+}
+
+export function isTypeSectionRequiredStages(value: StageId | SectionRequiredStages): value is SectionRequiredStages {
+  return typeof value === 'object'
+    && "operator" in value
+    && "stages" in value;
 }

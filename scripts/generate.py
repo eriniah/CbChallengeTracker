@@ -40,7 +40,7 @@ def season_from_str(str_season):
     }
 
 def section_from_str(season, section_idx, str_section):
-    token = re.match(r"\s*##\s+(?P<name>[\w -]*)", str_section)
+    token = re.match(r"\s*##\s+(?P<name>.*)", str_section)
     return {
         "id": f"{season['id']}.{section_idx}",
         "name": token.group('name'),
@@ -60,7 +60,7 @@ def stage_from_str(season, stage_idx, str_stage):
     }
 
 def challenge_from_str(season, challenge_idx, str_challenge):
-    token = re.match(r"\s*-\s+\[\s+]\s+(?P<text>[\w -\"'.,/\\+]*)", str_challenge)
+    token = re.match(r"\s*-\s+\[\s+]\s+(?P<text>.*)", str_challenge)
     text = token.group('text')
 
     tokens = [
@@ -68,8 +68,8 @@ def challenge_from_str(season, challenge_idx, str_challenge):
       ('Siege', r"Siege", ["Siege", "Field"]),
       ('Field', r"Field", ["Siege", "Field"]),
       ('PvP', r"PvP", ["Siege", "Field", "Free Battles"]),
-      ('AnyMode', r"in any mode", ["Siege", "Field", "Free Battles", "Deathmatch"]),
-      ('AnyBattle', r"in any battle", ["Siege", "Field", "Free Battles", "Deathmatch"]),
+      ('AnyMode', r"in any mode", ["Siege", "Field", "Free Battles"]),
+      ('AnyBattle', r"in any battle", ["Siege", "Field", "Free Battles"]),
       ('SingleBattle', r"in a single battle", ["Siege", "Field", "Free Battles"]),
       ('PVE', r"PVE", ["Bandit Raid", "Expedition"]),
       ('BanditRaid', r"Raider Camp|Bandit Raid", ["Bandit Raid"]),
@@ -133,33 +133,33 @@ def get_season_dict(season_id):
     tokens = [
         ('REWARDS', r"#####\s+Reward\s*\n"),
         ('STAGE', r"####\s+Stage\s+\d+\s+\(\d+/\d+\s+Required\)\s*\n"),
-        ('SECTION', r"##\s+([a-zA-Z0-9_\- ']+)\s*\n"),
-        ('SEASON', r"#\s+([a-zA-Z0-9_\- ']+)\s*\n"),
+        ('SECTION', r"##\s+([^\n]+)\s*\n"),
+        ('SEASON', r"#\s+([^\n]+)\s*\n"),
         ('REWARD', r"-\s+[a-zA-Z0-9 ,.\"'/\\\(\)\.]+\s*\n"),
-        ('CHALLENGE', r"-\s+\[\s*\]\s+[a-zA-Z0-9 ,\"'/\\\(\).\.\+]+\s*\n"),
+        ('CHALLENGE', r"-\s+\[\s*\]\s+([^\n]+)\s*\n"),
     ]
     tokens_regex = '|'.join('(?P<%s>%s)' % pair for pair in tokens)
 
     season = None
-    section_idx = 0
-    stage_idx = 0
-    challenge_idx = 0
+    section_idx = 1
+    stage_idx = 1
+    challenge_idx = 1
     for token in re.finditer(tokens_regex, response.text):
         kind = token.lastgroup
-        value = token.group()
+        value = token.group().strip()
         print(f"Token ({kind}): {value}")
 
         if kind == 'SEASON':
             season = season_from_str(value)
-            section_idx = 0
+            section_idx = 1
         elif kind == 'SECTION':
             season['sections'].append(section_from_str(season, section_idx, value))
             section_idx += 1
-            stage_idx = 0
+            stage_idx = 1
         elif kind == 'STAGE':
             season['sections'][-1]['stages'].append(stage_from_str(season, stage_idx, value))
             stage_idx += 1
-            challenge_idx = 0
+            challenge_idx = 1
         elif kind == 'CHALLENGE':
             season['sections'][-1]['stages'][-1]['challenges'].append(challenge_from_str(season, challenge_idx, value))
             challenge_idx += 1
@@ -177,5 +177,5 @@ if __name__ == "__main__":
         season_dict = get_season_dict(season_id)
         seasons_dict.append(season_dict)
 
-    with open('../public/challenges.json', 'w') as output:
+    with open('./challenges.json', 'w') as output:
         json.dump(seasons_dict, output, indent=4)

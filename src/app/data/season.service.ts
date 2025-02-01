@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import generatedSeasonsJson from '../../data/challenges.json';
 import manualSeasonsJson from '../../data/season.json';
+import {isTypeSectionRequiredStages} from "./season-utils";
 
 
 export const ChallengeTags = [
@@ -31,11 +32,15 @@ export class SeasonService {
   private readonly _challengeMap = new Map<ChallengeId, GridChallenge>();
 
   constructor() {
-    const requiredStageMap = new Map<SectionId, StageId>();
+    const requiredStageMap = new Map<SectionId, SectionRequiredStages>();
     (manualSeasonsJson as ManualSeasonConfig[]).forEach(season => {
       season.sections.forEach(section => {
         if (section.requiredStage) {
-          requiredStageMap.set(section.id, section.requiredStage);
+          if (isTypeSectionRequiredStages(section.requiredStage)) {
+            requiredStageMap.set(section.id, section.requiredStage);
+          } else {
+            requiredStageMap.set(section.id, { operator: 'single', stages: [ section.requiredStage ] });
+          }
         }
       });
     });
