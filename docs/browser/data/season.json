@@ -51,9 +51,13 @@
       },
       {
         "id": "4.3",
+        "requiredStage": "4.1.2"
+      },
+      {
+        "id": "4.4",
         "requiredStage": {
           "operator": "or",
-          "stages": ["4.2.3", "4.5.3"]
+          "stages": ["4.2.3", "4.3.3"]
         }
       }
     ]
