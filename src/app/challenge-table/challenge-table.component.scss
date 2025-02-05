@@ -39,12 +39,19 @@
   .group-header {
     margin: 4px;
 
+    .header-spacer {
+      display: inline-block;
+      width: 8px;
+
+    }
+
   }
 
   .group-buttons {
     margin-right: 14px;
 
   }
+
 }
 
 .info-text {

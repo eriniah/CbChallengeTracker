@@ -1,4 +1,7 @@
 import {SeasonService} from "./season.service";
+import {range} from "../utils/collections";
+
+const maxChallengesPerStage = 20;
 
 const seasonIdRegex = /^(\d+)/;
 const sectionIdRegex = /^(\d+\.\d+)/;
@@ -271,6 +274,15 @@ export class CompletedChallenges {
       stageIds: Array.from(this.stageIds.values()),
       challengeIds: Array.from(this.challengeIds.values())
     };
+  }
+
+  completedStageChallengeIds(stageId: StageId): ChallengeId[] {
+    // Quicker than searching entire challenge list.
+    // Generate ids for challenges 1-20 in stage (no stage has more than 20 challenges in the game)
+    // return challenge ids that are found in set
+    return range(1, maxChallengesPerStage + 1)
+      .map(n => `${stageId}.${n}` as ChallengeId)
+      .filter(cId => this.challengeIds.has(cId));
   }
 
 }

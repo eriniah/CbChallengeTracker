@@ -19,3 +19,11 @@ export class Stack<T> {
   }
 
 }
+
+export function range(s: number, n: number): number[] {
+  const arr: number[] = [];
+  for (let i = s; i < n; i++) {
+    arr.push(i);
+  }
+  return arr;
+}
