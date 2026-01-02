@@ -38951,5 +38951,3140 @@
                 ]
             }
         ]
+    },
+    {
+        "id": 23,
+        "name": "Season 23 - Silla",
+        "sections": [
+            {
+                "id": "23.1",
+                "name": "Silla Guards",
+                "stages": [
+                    {
+                        "id": "23.1.1",
+                        "name": "Stage 1",
+                        "required": 6,
+                        "total": 8,
+                        "challenges": [
+                            {
+                                "id": "23.1.1.1",
+                                "text": "In Field o Siege Battles of any type, get a Troop Kill Score of 400 higher with 0/8 units.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.1.1.2",
+                                "text": "Get 0/30 total kills or assists in Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.1.1.3",
+                                "text": "Get a kill/death ratio of 1.5 or higher with any unit in 0/6 Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.1.1.4",
+                                "text": "Get an A+ rating or better in 0/5 PVE battle",
+                                "tags": [
+                                    "Bandit Raid",
+                                    "Expedition"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.1.1.5",
+                                "text": "Get 0/4 \"No Quarter\" or \"Grand Bloodbath\" badges in Field or Siege Battle of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.1.1.6",
+                                "text": "Get 0/30 kills or assists in Free Battles, or get 8 kills or assistsin 0/6 Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.1.1.7",
+                                "text": "Complete 0/10 Fief Quests.",
+                                "tags": [
+                                    "Open World"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.1.1.8",
+                                "text": "Search 0/10 loot sites in the open world.",
+                                "tags": [
+                                    "Open World"
+                                ],
+                                "conditions": []
+                            }
+                        ],
+                        "rewards": [
+                            {
+                                "text": "Unit Medal",
+                                "amount": 15
+                            }
+                        ]
+                    },
+                    {
+                        "id": "23.1.2",
+                        "name": "Stage 2",
+                        "required": 6,
+                        "total": 8,
+                        "challenges": [
+                            {
+                                "id": "23.1.2.1",
+                                "text": "In Field or Siege Battles of any type, get a kill/death ratio of 1 or higher with any two units 0/6 times.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.1.2.2",
+                                "text": "Be placed in the top 5 in 0/6 Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.1.2.3",
+                                "text": "Get an A+ rating or better in 0/5 PVE battles",
+                                "tags": [
+                                    "Bandit Raid",
+                                    "Expedition"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.1.2.4",
+                                "text": "Get 0/4 \"No Quarter\" or 'Grand Bloodbath!' badges in Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.1.2.5",
+                                "text": "Deploy or destroy an artillery piece in 0/6 Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.1.2.6",
+                                "text": "You or your group collectively kills a total of 8 heroes in 0/6 Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.1.2.7",
+                                "text": "Defeat a band of rebels 0/10 times in the open world.",
+                                "tags": [
+                                    "Open World"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.1.2.8",
+                                "text": "Join 0/6 Free Battles or 0/6 Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege"
+                                ],
+                                "conditions": []
+                            }
+                        ],
+                        "rewards": [
+                            {
+                                "text": "Silla Guards Kit",
+                                "amount": 30
+                            },
+                            {
+                                "text": "Barracks Expansion",
+                                "amount": 1
+                            },
+                            {
+                                "text": "Unit Medal",
+                                "amount": 65
+                            }
+                        ]
+                    },
+                    {
+                        "id": "23.1.3",
+                        "name": "Stage 3",
+                        "required": 6,
+                        "total": 8,
+                        "challenges": [
+                            {
+                                "id": "23.1.3.1",
+                                "text": "Get 0/30 total kills or assists in Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.1.3.2",
+                                "text": "In Field or Siege Battles of any type, win 0/3 battles in a row or join 0/5 battles.",
+                                "tags": [
+                                    "Field",
+                                    "Siege"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.1.3.3",
+                                "text": "Get an A rating or better in 0/6 Free battles, or get an A+ rating or better in 0/6 Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.1.3.4",
+                                "text": "Get the \"Hat-Trick \" or \"A Deadly Century\" badge in 0/5 Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.1.3.5",
+                                "text": "Deploy or destroy an artillery piece in 0/6 Field or Siege Battleg of any type,",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.1.3.6",
+                                "text": "In Deathmatch, you or your group collectively kills a total of 0/50 heroes",
+                                "tags": [
+                                    "Deathmatch"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.1.3.7",
+                                "text": "Complete 0/10 Daily Quests.",
+                                "tags": [
+                                    "General"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.1.3.8",
+                                "text": "Defeat a band of rebels /10 times in the open world.",
+                                "tags": [
+                                    "Open World"
+                                ],
+                                "conditions": []
+                            }
+                        ],
+                        "rewards": [
+                            {
+                                "text": "Unit Medal",
+                                "amount": 20
+                            }
+                        ]
+                    },
+                    {
+                        "id": "23.1.4",
+                        "name": "Stage 4",
+                        "required": 6,
+                        "total": 8,
+                        "challenges": [
+                            {
+                                "id": "23.1.4.1",
+                                "text": "(Don't know yet)",
+                                "tags": [],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.1.4.2",
+                                "text": "Get 0/30 total kills or assists in Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.1.4.3",
+                                "text": "In Field or Siege Battles of any type, win 0/3 battles in a row or join 0/5 battles.",
+                                "tags": [
+                                    "Field",
+                                    "Siege"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.1.4.4",
+                                "text": "Earn 0/6 \"Shatter the Ranks\" badges.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.1.4.5",
+                                "text": "Use artillery to kill 30 soldiers or 2 heroes in 0/6 Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.1.4.6",
+                                "text": "In Deathmatch, you or your group collectively kills a total of 0/50 heroes",
+                                "tags": [
+                                    "Deathmatch"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.1.4.7",
+                                "text": "Earn 0/6 \"Cakewalk\" badges during PVE battles.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles",
+                                    "Bandit Raid",
+                                    "Expedition"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.1.4.8",
+                                "text": "Take part in 0/6 Territory War Battles.",
+                                "tags": [
+                                    "Territory Wars"
+                                ],
+                                "conditions": []
+                            }
+                        ],
+                        "rewards": [
+                            {
+                                "text": "Silla Guards Avatar",
+                                "amount": null
+                            },
+                            {
+                                "text": "Unit Medal",
+                                "amount": 20
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "23.2",
+                "name": "Tiger Fists",
+                "stages": [
+                    {
+                        "id": "23.2.1",
+                        "name": "Stage 1",
+                        "required": 8,
+                        "total": 10,
+                        "challenges": [
+                            {
+                                "id": "23.2.1.1",
+                                "text": "Use a trebuchet or interrupt a capture 0/8 times in Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.2.1.2",
+                                "text": "In Field or Siege Battles of any type, win 0/3 battles in a row or join 0/5 battles.",
+                                "tags": [
+                                    "Field",
+                                    "Siege"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.2.1.3",
+                                "text": "In Field or Siege Battles of any type, get a kill/death ratio of 1 or higher with any two units 0/8 times.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.2.1.4",
+                                "text": "Get 0/40 total kills or assists in Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.2.1.5",
+                                "text": "Be placed in the top 5 in 0/8 Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.2.1.6",
+                                "text": "In Field or Siege Battles of any type, you or your group members get 0/40 B+ or better ratings or get 0/8 A+ or better ratings.",
+                                "tags": [
+                                    "Field",
+                                    "Siege"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.2.1.7",
+                                "text": "Raise your hero up 0/10 levels.",
+                                "tags": [
+                                    "General"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.2.1.8",
+                                "text": "Complete 0/12 Daily Quests.",
+                                "tags": [
+                                    "General"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.2.1.9",
+                                "text": "Defeat 0/1,200 enemy units in PVE battles",
+                                "tags": [
+                                    "Bandit Raid",
+                                    "Expedition"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.2.1.10",
+                                "text": "Win 0/10 PVE battles",
+                                "tags": [
+                                    "Bandit Raid",
+                                    "Expedition"
+                                ],
+                                "conditions": []
+                            }
+                        ],
+                        "rewards": [
+                            {
+                                "text": "Unit Medal",
+                                "amount": 20
+                            }
+                        ]
+                    },
+                    {
+                        "id": "23.2.2",
+                        "name": "Stage 2",
+                        "required": 8,
+                        "total": 10,
+                        "challenges": [
+                            {
+                                "id": "23.2.2.1",
+                                "text": "Knock over a siege ladder or acquire 15 capture points in 0/8 Field or Siege battle of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.2.2.2",
+                                "text": "Get an A rating or better in 0/8 Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.2.2.3",
+                                "text": "Get a Troop Kill Score of 300 or higher with 0/10 units in Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.2.2.4",
+                                "text": "Earn 0/8 \"Shatter the Ranks\" badges.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.2.2.5",
+                                "text": "Use artillery to kill 30 soldiers or 2 heroes in 0/8 Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.2.2.6",
+                                "text": "You or your group collectively kills a total of 8 heroes in 0/8 Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.2.2.7",
+                                "text": "Complete 0/12 Fief Quests.",
+                                "tags": [
+                                    "Open World"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.2.2.8",
+                                "text": "Search 0/12 loot sites in the open world.",
+                                "tags": [
+                                    "Open World"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.2.2.9",
+                                "text": "Get 0/40 kills or assists in Free Battles, or get 8 kills or assists in 0/8 Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.2.2.10",
+                                "text": "Defeat 0/1,200 enemy units in PVE battles",
+                                "tags": [
+                                    "Bandit Raid",
+                                    "Expedition"
+                                ],
+                                "conditions": []
+                            }
+                        ],
+                        "rewards": [
+                            {
+                                "text": "Unit Medal",
+                                "amount": 140
+                            }
+                        ]
+                    },
+                    {
+                        "id": "23.2.3",
+                        "name": "Stage 3",
+                        "required": 8,
+                        "total": 10,
+                        "challenges": [
+                            {
+                                "id": "23.2.3.1",
+                                "text": "Get a Troop Kill Score of 300 or higher with any unit in 0/8 Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.2.3.2",
+                                "text": "Use a trebuchet or interrupt a capture 0/8 times in Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.2.3.3",
+                                "text": "Get 0/40 kills or assists in Free Battles, or get 8 kills or assists in 0/8 Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.2.3.4",
+                                "text": "Get 0/6 \"No Quarter\" or \"Grand Bloodbath\" badges in Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.2.3.5",
+                                "text": "Use artillery to kill 30 soldiers or 2 heroes in 0/8 Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.2.3.6",
+                                "text": "In Deathmatch, you or your group collectively kills a total of 0/100 heroes.",
+                                "tags": [
+                                    "Deathmatch"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.2.3.7",
+                                "text": "Complete 0/12 Daily Quests.",
+                                "tags": [
+                                    "General"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.2.3.8",
+                                "text": "Take part in 0/8 Territory War battles.",
+                                "tags": [
+                                    "Territory Wars"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.2.3.9",
+                                "text": "Join 0/8 Ranked Battles or win 0/8 Field or Siege Battles or any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Ranked"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.2.3.10",
+                                "text": "Achieve victory in 0/8 Bandit Raids.",
+                                "tags": [
+                                    "Bandit Raid"
+                                ],
+                                "conditions": []
+                            }
+                        ],
+                        "rewards": [
+                            {
+                                "text": "Tiger Fists Kit",
+                                "amount": 14
+                            },
+                            {
+                                "text": "Barracks Expansion",
+                                "amount": 1
+                            },
+                            {
+                                "text": "Unit Medal",
+                                "amount": 70
+                            }
+                        ]
+                    },
+                    {
+                        "id": "23.2.4",
+                        "name": "Stage 4",
+                        "required": 8,
+                        "total": 10,
+                        "challenges": [
+                            {
+                                "id": "23.2.4.1",
+                                "text": "(Don't know yet)",
+                                "tags": [],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.2.4.2",
+                                "text": "In Field or Siege Battles of any type, get a Troop Kill Score of 400 or higher with 0/10 units.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.2.4.3",
+                                "text": "Use a trebuchet or interrupt a capture 0/8 times in Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.2.4.4",
+                                "text": "Get the \"Hat-Trick\" or \"A Deadly Century\" badge in 0/7 Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.2.4.5",
+                                "text": "Use artillery to kill 30 soldiers or 2 heroes in 0/6 Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.2.4.6",
+                                "text": "You or your group collectively kills a total of 240 soldiers in 0/8 Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.2.4.7",
+                                "text": "Raise your hero up 0/10 levels.",
+                                "tags": [
+                                    "General"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.2.4.8",
+                                "text": "Complete 0/12 Daily Quests.",
+                                "tags": [
+                                    "General"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.2.4.9",
+                                "text": "Join 0/8 Ranked Battles or win 0/8 Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Ranked"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.2.4.10",
+                                "text": "Achieve victory in 0/8 Bandit Raids.",
+                                "tags": [
+                                    "Bandit Raid"
+                                ],
+                                "conditions": []
+                            }
+                        ],
+                        "rewards": [
+                            {
+                                "text": "Unit Medal",
+                                "amount": 30
+                            }
+                        ]
+                    },
+                    {
+                        "id": "23.2.5",
+                        "name": "Stage 5",
+                        "required": 8,
+                        "total": 10,
+                        "challenges": [
+                            {
+                                "id": "23.2.5.1",
+                                "text": "(Don't know yet)",
+                                "tags": [],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.2.5.2",
+                                "text": "(Don't know yet)",
+                                "tags": [],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.2.5.3",
+                                "text": "Get a kill/death ratio of 1.5 or higher with any unit in 0/8 Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.2.5.4",
+                                "text": "Earn 0/8 \"Shatter the Ranks\" badges.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.2.5.5",
+                                "text": "Use artillery to kill 30 soldiers or 2 heroes in 0/8 Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.2.5.6",
+                                "text": "In Deathmatch, you or your group collectively kills a total of 0/100 heroes.",
+                                "tags": [
+                                    "Deathmatch"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.2.5.7",
+                                "text": "Raise your hero up 0/10 levels.",
+                                "tags": [
+                                    "General"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.2.5.8",
+                                "text": "Take part in 0/8 Territory War battles.",
+                                "tags": [
+                                    "Territory Wars"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.2.5.9",
+                                "text": "Get a Troop Kill Score of 600 or more in 0/8 Ranked battles, or get a Troop Kill Score of 1000 or more in 0/8 Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles",
+                                    "Ranked"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.2.5.10",
+                                "text": "Earn 0/8 \"Cakewalk\" badges during PVE battles.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles",
+                                    "Bandit Raid",
+                                    "Expedition"
+                                ],
+                                "conditions": []
+                            }
+                        ],
+                        "rewards": [
+                            {
+                                "text": "Tiger Fists Avatar",
+                                "amount": null
+                            },
+                            {
+                                "text": "Unit Medal",
+                                "amount": 30
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "23.3",
+                "name": "Hwarang",
+                "stages": [
+                    {
+                        "id": "23.3.1",
+                        "name": "Stage 1",
+                        "required": 10,
+                        "total": 12,
+                        "challenges": [
+                            {
+                                "id": "23.3.1.1",
+                                "text": "Earn 40 capture points or interrupt a capture in 0/10 Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.3.1.2",
+                                "text": "In Field or Siege Battles of any type, get a kill/death ratio of 1 or higher with any two units 0/10 times.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.3.1.3",
+                                "text": "Get a Troop Kill Score of 300 or higher with 0/12 units in Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.3.1.4",
+                                "text": "In Field or Siege Battles of any type, win 0/3 battles in a row or join 0/5 battles.",
+                                "tags": [
+                                    "Field",
+                                    "Siege"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.3.1.5",
+                                "text": "Use artillery to kill 0/160 soldiers or 0/10 heroes in Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.3.1.6",
+                                "text": "Earn 0/10 \"Shatter the Ranks\" badges.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.3.1.7",
+                                "text": "In Deathmatch, you or your group collectively kills a total of 0/150 heroes.",
+                                "tags": [
+                                    "Deathmatch"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.3.1.8",
+                                "text": "Raise your hero up 0/12 levels.",
+                                "tags": [
+                                    "General"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.3.1.9",
+                                "text": "Complete 0/15 Daily Quests.",
+                                "tags": [
+                                    "General"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.3.1.10",
+                                "text": "Earn 0/10 \"Cakewalk\" badges during PVE battles.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles",
+                                    "Bandit Raid",
+                                    "Expedition"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.3.1.11",
+                                "text": "Defeat 0/1,500 enemy units in PVE battles",
+                                "tags": [
+                                    "Bandit Raid",
+                                    "Expedition"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.3.1.12",
+                                "text": "Join 0/10 Ranked Battles or win 0/10 Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Ranked"
+                                ],
+                                "conditions": []
+                            }
+                        ],
+                        "rewards": [
+                            {
+                                "text": "Unit Medal",
+                                "amount": 30
+                            }
+                        ]
+                    },
+                    {
+                        "id": "23.3.2",
+                        "name": "Stage 2",
+                        "required": 10,
+                        "total": 12,
+                        "challenges": [
+                            {
+                                "id": "23.3.2.1",
+                                "text": "Get a kill/death ratio of 1.5 or higher with any unit in 0/10 Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.3.2.2",
+                                "text": "Get a Troop Kill Score of 300 or higher with 0/12 units in Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.3.2.3",
+                                "text": "Get 0/50 total kills or assists in Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.3.2.4",
+                                "text": "Join 0/10 Free Battles or win 0/10 Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.3.2.5",
+                                "text": "Use artillery to kill 0/160 soldiers or 0/10 heroes in Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.3.2.6",
+                                "text": "Get the \"A Deadly Century\" badge in 0/9 Field or Siege Battles Of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.3.2.7",
+                                "text": "You or your group members get 0/20 A+ or better ratings in Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.3.2.8",
+                                "text": "Raise your hero up 0/12 levels.",
+                                "tags": [
+                                    "General"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.3.2.9",
+                                "text": "Take part in 0/10 Territory War battles.",
+                                "tags": [
+                                    "Territory Wars"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.3.2.10",
+                                "text": "Defeat 0/1,500 enemy units in PVE battles",
+                                "tags": [
+                                    "Bandit Raid",
+                                    "Expedition"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.3.2.11",
+                                "text": "Win 0/15 PVE battles",
+                                "tags": [
+                                    "Bandit Raid",
+                                    "Expedition"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.3.2.12",
+                                "text": "Get a Troop Kill Score of 600 or more in 0/10 Ranked battles, or get a Troop Kill Score of or more in 0/10 Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles",
+                                    "Ranked"
+                                ],
+                                "conditions": []
+                            }
+                        ],
+                        "rewards": [
+                            {
+                                "text": "Unit Medal",
+                                "amount": 30
+                            }
+                        ]
+                    },
+                    {
+                        "id": "23.3.3",
+                        "name": "Stage 3",
+                        "required": 10,
+                        "total": 12,
+                        "challenges": [
+                            {
+                                "id": "23.3.3.1",
+                                "text": "In Field or Siege Battles of any type, win 0/3 battles in a row or join 0/5 battles.",
+                                "tags": [
+                                    "Field",
+                                    "Siege"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.3.3.2",
+                                "text": "In Field or Siege Battles of any type, get a kill/death ratio of 1 or higher with any two units 0/10 times.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.3.3.3",
+                                "text": "Join 0/10 Deathmatches or win 0/10 Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Deathmatch"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.3.3.4",
+                                "text": "Get 0/50 kills or assists in Free Battles, or get 8 kills or assists in 0/10 Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.3.3.5",
+                                "text": "Use artillery to kill 30 soldiers or 2 heroes in 0/10 Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.3.3.6",
+                                "text": "Earn Ranks\" badges.",
+                                "tags": [],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.3.3.7",
+                                "text": "In Field or Siege Battles of any type, you or your group members get-0/50 B+ or better ratings or get 0/10 A+ or better ratings.",
+                                "tags": [
+                                    "Field",
+                                    "Siege"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.3.3.8",
+                                "text": "Complete 0/15 Daily Quests.",
+                                "tags": [
+                                    "General"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.3.3.9",
+                                "text": "Search 0/15 loot sites in the open world.",
+                                "tags": [
+                                    "Open World"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.3.3.10",
+                                "text": "Defeat 0/1,500 enemy units in PVE battles",
+                                "tags": [
+                                    "Bandit Raid",
+                                    "Expedition"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.3.3.11",
+                                "text": "Win 0/15 PVE battles",
+                                "tags": [
+                                    "Bandit Raid",
+                                    "Expedition"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.3.3.12",
+                                "text": "Join 0/10 Ranked Battles or win 0/10 Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Ranked"
+                                ],
+                                "conditions": []
+                            }
+                        ],
+                        "rewards": [
+                            {
+                                "text": "Unit Medal",
+                                "amount": 150
+                            }
+                        ]
+                    },
+                    {
+                        "id": "23.3.4",
+                        "name": "Stage 4",
+                        "required": 10,
+                        "total": 12,
+                        "challenges": [
+                            {
+                                "id": "23.3.4.1",
+                                "text": "In Field or Siege Battles of any type, win 0/3 battles in a row or join 0/5 battles.",
+                                "tags": [
+                                    "Field",
+                                    "Siege"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.3.4.2",
+                                "text": "Destroy a siege engine or acquire 40 capture points in 0/10 Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.3.4.3",
+                                "text": "Join 0/10 Deathmatches or get the \"Quad Kill\" badge 0/9 times in Field or Siege battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Deathmatch"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.3.4.4",
+                                "text": "Get an A rating or better in 0/10 Free battles, or get an A+ rating or better in 0/10 Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.3.4.5",
+                                "text": "Deploy or destroy an artillery piece in 0/10 Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.3.4.6",
+                                "text": "Earn 0/10 \"Shatter the Ranks\" badges.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.3.4.7",
+                                "text": "You or your group collectively kills a total of 8 heroes in 0/10 Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.3.4.8",
+                                "text": "Defeat a band of rebels 0/15 times in the open world.",
+                                "tags": [
+                                    "Open World"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.3.4.9",
+                                "text": "Complete 0/15 Fief Quests.",
+                                "tags": [
+                                    "Open World"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.3.4.10",
+                                "text": "Get a kill/death ratio of 1.5 or higher with any unit in 0/10 Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.3.4.11",
+                                "text": "Earn 0/10 \"Cakewalk\" badges during PVE battles.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles",
+                                    "Bandit Raid",
+                                    "Expedition"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.3.4.12",
+                                "text": "Defeat 0/30 heroes in Ranked battles, or get the \"Grand Bloodbath\" badge 0/6 times in Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles",
+                                    "Ranked"
+                                ],
+                                "conditions": []
+                            }
+                        ],
+                        "rewards": [
+                            {
+                                "text": "Hwarang Kit",
+                                "amount": 22
+                            },
+                            {
+                                "text": "Barracks Expansion",
+                                "amount": 1
+                            },
+                            {
+                                "text": "Unit Medal",
+                                "amount": 80
+                            }
+                        ]
+                    },
+                    {
+                        "id": "23.3.5",
+                        "name": "Stage 5",
+                        "required": 10,
+                        "total": 12,
+                        "challenges": [
+                            {
+                                "id": "23.3.5.1",
+                                "text": "(Don't know yet)",
+                                "tags": [],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.3.5.2",
+                                "text": "Get a Troop Kill Score of 400 or higher with any unit in 0/10 Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.3.5.3",
+                                "text": "Get 0/50 total kills or assists in Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.3.5.4",
+                                "text": "Get 0/30 kills in Deathmatches, or get 8 kills or assists in 0/6 Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Deathmatch"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.3.5.5",
+                                "text": "Get 0/50 kills or assists in Free Battles, or get 8 kills or assists in 0/10 Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.3.5.6",
+                                "text": "Deploy or destroy an artillery piece in 0/10 Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.3.5.7",
+                                "text": "Earn 0/10 \"Shatter the Ranks\" badges.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.3.5.8",
+                                "text": "You or your group collectively kills a total of 8 heroes in 0/10 Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.3.5.9",
+                                "text": "Defeat a band of rebels 0/15 times in the open world.",
+                                "tags": [
+                                    "Open World"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.3.5.10",
+                                "text": "Search 0/15 loot sites in the open world.",
+                                "tags": [
+                                    "Open World"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.3.5.11",
+                                "text": "Get an A+ rating or better in 0/10 PVE battles",
+                                "tags": [
+                                    "Bandit Raid",
+                                    "Expedition"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.3.5.12",
+                                "text": "Defeat 0/30 heroes in Ranked battles, or get the \"Grand Bloodbath\" badge 0/6 times in Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles",
+                                    "Ranked"
+                                ],
+                                "conditions": []
+                            }
+                        ],
+                        "rewards": [
+                            {
+                                "text": "Doctrine Spirit ",
+                                "amount": null
+                            },
+                            {
+                                "text": "Unit Medal",
+                                "amount": 240
+                            }
+                        ]
+                    },
+                    {
+                        "id": "23.3.6",
+                        "name": "Stage 6",
+                        "required": 10,
+                        "total": 12,
+                        "challenges": [
+                            {
+                                "id": "23.3.6.1",
+                                "text": "(Don't know yet)",
+                                "tags": [],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.3.6.2",
+                                "text": "(Don't know yet)",
+                                "tags": [],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.3.6.3",
+                                "text": "Get a Troop Kill Score of 300 or higher with 0/12 units in Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.3.6.4",
+                                "text": "Kill 0/30 enemy heroes in Deathmatch, or earn 0/6 \"No Quarter\" badges in Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles",
+                                    "Deathmatch"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.3.6.5",
+                                "text": "Get an A rating or better in 0/10 Free battles, or get an A+ rating or better in 0/10 Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.3.6.6",
+                                "text": "Deploy or destroy an artillery piece in 0/10 Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.3.6.7",
+                                "text": "Earn 0/10 \"Shatter the Ranks\" badges.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.3.6.8",
+                                "text": "You or your group collectively kills a total of 8 heroes in 0/10 Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.3.6.9",
+                                "text": "Defeat a band of rebels 0/15 times in the open world.",
+                                "tags": [
+                                    "Open World"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.3.6.10",
+                                "text": "Search 0/15 loot sites in the open world.",
+                                "tags": [
+                                    "Open World"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.3.6.11",
+                                "text": "Earn 0/10 \"Cakewalk\" badges during PVE battles.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles",
+                                    "Bandit Raid",
+                                    "Expedition"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.3.6.12",
+                                "text": "Get a Troop Kill Score of 600 or more in 0/10 Ranked battles, or get a Troop Kill Score of 1000 or more in 0/10 Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles",
+                                    "Ranked"
+                                ],
+                                "conditions": []
+                            }
+                        ],
+                        "rewards": [
+                            {
+                                "text": "Unit Medal",
+                                "amount": 40
+                            }
+                        ]
+                    },
+                    {
+                        "id": "23.3.7",
+                        "name": "Stage 7",
+                        "required": 10,
+                        "total": 12,
+                        "challenges": [
+                            {
+                                "id": "23.3.7.1",
+                                "text": "(Don't know yet)",
+                                "tags": [],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.3.7.2",
+                                "text": "(Don't know yet)",
+                                "tags": [],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.3.7.3",
+                                "text": "In any battle, get a Troop Kill Score of 0/5,000.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.3.7.4",
+                                "text": "Kill 0/30 enemy heroes in Deathmatch, or earn 0/6 \"No Quarter\" badges in Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles",
+                                    "Deathmatch"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.3.7.5",
+                                "text": "Join 0/10 Free Battles or win 0/10 Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.3.7.6",
+                                "text": "Use artillery to kill 0/160 soldiers or 0/10 heroes in Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.3.7.7",
+                                "text": "Get 0/8 \"No Quarter\" or \"Grand Bloodbath\" badges in Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.3.7.8",
+                                "text": "You or your group collectively kills a total of 240 soldiers in 0/10 Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.3.7.9",
+                                "text": "Defeat a band of rebels 0/15 times in the open world.",
+                                "tags": [
+                                    "Open World"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.3.7.10",
+                                "text": "Complete 0/15 Daily Quests.",
+                                "tags": [
+                                    "General"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.3.7.11",
+                                "text": "Earn 0/10 \"Cakewalk\" badges during PVE battles.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles",
+                                    "Bandit Raid",
+                                    "Expedition"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "23.3.7.12",
+                                "text": "Join 0/10 Ranked Battles or win 0/10 Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Ranked"
+                                ],
+                                "conditions": []
+                            }
+                        ],
+                        "rewards": [
+                            {
+                                "text": "Hwarang Avatar",
+                                "amount": null
+                            },
+                            {
+                                "text": "Unit Medal",
+                                "amount": 40
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 24,
+        "name": "Season 24 - Terracotta",
+        "sections": [
+            {
+                "id": "24.1",
+                "name": "Quins Footbow",
+                "stages": [
+                    {
+                        "id": "24.1.1",
+                        "name": "Stage 1",
+                        "required": 6,
+                        "total": 8,
+                        "challenges": [
+                            {
+                                "id": "24.1.1.1",
+                                "text": "Earn a Troop Kill Score of 0/3,000.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.1.1.2",
+                                "text": "Get 0/30 total kills or assists in Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.1.1.3",
+                                "text": "In Field or Siege battles of any type, get the Shatter the Ranks badge 0/4 times.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.1.1.4",
+                                "text": "Win 0/3 Expeditions or Bandit Raid.",
+                                "tags": [
+                                    "Bandit Raid",
+                                    "Expedition"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.1.1.5",
+                                "text": "Get 0/1 \"No Quarter\" or \"Grand Bloodbath\" badges in Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.1.1.6",
+                                "text": "Raise your hero up 0/4 levels.",
+                                "tags": [
+                                    "General"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.1.1.7",
+                                "text": "Complete 0/2 Fief Quests.",
+                                "tags": [
+                                    "Open World"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.1.1.8",
+                                "text": "Search 0/5 loot sites in the open world.",
+                                "tags": [
+                                    "Open World"
+                                ],
+                                "conditions": []
+                            }
+                        ],
+                        "rewards": [
+                            {
+                                "text": "Unit Medal",
+                                "amount": 15
+                            }
+                        ]
+                    },
+                    {
+                        "id": "24.1.2",
+                        "name": "Stage 2",
+                        "required": 6,
+                        "total": 8,
+                        "challenges": [
+                            {
+                                "id": "24.1.2.1",
+                                "text": "In Field or Siege Battles of any type, get a kill/death ratio of 1 or higher with any two units 0/4 times.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.1.2.2",
+                                "text": "Be placed in the top 5 in 0/4 Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.1.2.3",
+                                "text": "In Expeditions or Bandit Raid, get an A rating or better 0/2 times.",
+                                "tags": [
+                                    "Bandit Raid",
+                                    "Expedition"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.1.2.4",
+                                "text": "Complete 0/6 Daily Quests.",
+                                "tags": [
+                                    "General"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.1.2.5",
+                                "text": "Deploy or destroy an artillery piece in 0/6 Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.1.2.6",
+                                "text": "You or your group collectively kills a total of 8 heroes in 0/6 Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.1.2.7",
+                                "text": "Defeat a band of rebels 0/3 times in the open world.",
+                                "tags": [
+                                    "Open World"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.1.2.8",
+                                "text": "Join 0/6 Free Battles or win 0/6 Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege"
+                                ],
+                                "conditions": []
+                            }
+                        ],
+                        "rewards": [
+                            {
+                                "text": "Quins Footbow Kit",
+                                "amount": 32
+                            },
+                            {
+                                "text": "Unit Medal",
+                                "amount": 65
+                            }
+                        ]
+                    },
+                    {
+                        "id": "24.1.3",
+                        "name": "Stage 3",
+                        "required": 6,
+                        "total": 8,
+                        "challenges": [
+                            {
+                                "id": "24.1.3.1",
+                                "text": "Get 0/30 total kills or assists in Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.1.3.2",
+                                "text": "In Field or Siege Battles of any type, win 0/3 battles in a row or join 0/5 battles.",
+                                "tags": [
+                                    "Field",
+                                    "Siege"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.1.3.3",
+                                "text": "Get an A rating or better in 0/6 Free battles, or get an A+ rating or better in 0/6 Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.1.3.4",
+                                "text": "Get the \"Hat-Trick\" or \"A Deadly Century\" badge in 0/5 Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.1.3.5",
+                                "text": "Deploy or destroy an artillery piece in 0/6 Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.1.3.6",
+                                "text": "In Deathmatch, you or your group collectively kills a total of 0/50 heroes.",
+                                "tags": [
+                                    "Deathmatch"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.1.3.7",
+                                "text": "Complete 0/10 Daily Quests.",
+                                "tags": [
+                                    "General"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.1.3.8",
+                                "text": "Defeat a band of rebels 0/10 times in the open world.",
+                                "tags": [
+                                    "Open World"
+                                ],
+                                "conditions": []
+                            }
+                        ],
+                        "rewards": [
+                            {
+                                "text": "Ember",
+                                "amount": null
+                            },
+                            {
+                                "text": "Unit Medal",
+                                "amount": 20
+                            }
+                        ]
+                    },
+                    {
+                        "id": "24.1.4",
+                        "name": "Stage 4",
+                        "required": 6,
+                        "total": 8,
+                        "challenges": [],
+                        "rewards": [
+                            {
+                                "text": "Quins Footbow Avatar",
+                                "amount": null
+                            },
+                            {
+                                "text": "Unit Medal",
+                                "amount": 20
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "24.2",
+                "name": "Halberd Elite",
+                "stages": [
+                    {
+                        "id": "24.2.1",
+                        "name": "Stage 1",
+                        "required": 8,
+                        "total": 10,
+                        "challenges": [
+                            {
+                                "id": "24.2.1.1",
+                                "text": "Use a trebuchet or interrupt a capture 0/8 times in Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.2.1.2",
+                                "text": "In Field or Siege Battles of any type, win 0/3 battles in a row or join 0/5 battles.",
+                                "tags": [
+                                    "Field",
+                                    "Siege"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.2.1.3",
+                                "text": "In Field or Siege Battles of any type, get a kill/death ratio of 1 or higher with any two units 0/8 times.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.2.1.4",
+                                "text": "Get 0/40 total kills or assists in Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.2.1.5",
+                                "text": "Be placed in the top 5 in 0/8 Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.2.1.6",
+                                "text": "In Field or Siege Battles of any type, you or your group members get 0/40 B+ or better ratings or get 0/8 A+ or better ratings.",
+                                "tags": [
+                                    "Field",
+                                    "Siege"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.2.1.7",
+                                "text": "Raise your hero up 0/10 levels.",
+                                "tags": [
+                                    "General"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.2.1.8",
+                                "text": "Complete 0/12 Daily Quests.",
+                                "tags": [
+                                    "General"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.2.1.9",
+                                "text": "Defeat 0/1,200 enemy units in PVE battles",
+                                "tags": [
+                                    "Bandit Raid",
+                                    "Expedition"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.2.1.10",
+                                "text": "Win 0/10 PVE battles",
+                                "tags": [
+                                    "Bandit Raid",
+                                    "Expedition"
+                                ],
+                                "conditions": []
+                            }
+                        ],
+                        "rewards": [
+                            {
+                                "text": "Unit Medal",
+                                "amount": 20
+                            }
+                        ]
+                    },
+                    {
+                        "id": "24.2.2",
+                        "name": "Stage 2",
+                        "required": 8,
+                        "total": 10,
+                        "challenges": [
+                            {
+                                "id": "24.2.2.1",
+                                "text": "Knock over a siege ladder or acquire 15 capture points in 0/8 Field or Siege battle of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.2.2.2",
+                                "text": "Get an A rating or better in 0/8 Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.2.2.3",
+                                "text": "Get a Troop Kill Score of 300 or higher with 0/10 units in Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.2.2.4",
+                                "text": "Earn 0/8 \"Shatter the Ranks\" badges.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.2.2.5",
+                                "text": "Use artillery to kill 30 soldiers or 2 heroes in 0/8 Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.2.2.6",
+                                "text": "You or your group collectively kills a total of 8 heroes in 0/8 Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.2.2.7",
+                                "text": "Complete 0/12 Fief Quests.",
+                                "tags": [
+                                    "Open World"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.2.2.8",
+                                "text": "Search 0/12 loot sites in the open world.",
+                                "tags": [
+                                    "Open World"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.2.2.9",
+                                "text": "In Field or Siege Battles of any mode, get 0/40 kills or assists in total; or in 0/8 Field or Siege Battles of any mode, get 8 kills or assists.",
+                                "tags": [
+                                    "Field",
+                                    "Siege"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.2.2.10",
+                                "text": "Defeat 0/1,200 enemy units in PVE battles",
+                                "tags": [
+                                    "Bandit Raid",
+                                    "Expedition"
+                                ],
+                                "conditions": []
+                            }
+                        ],
+                        "rewards": [
+                            {
+                                "text": "Unit Medal",
+                                "amount": 140
+                            }
+                        ]
+                    },
+                    {
+                        "id": "24.2.3",
+                        "name": "Stage 3",
+                        "required": 8,
+                        "total": 10,
+                        "challenges": [
+                            {
+                                "id": "24.2.3.1",
+                                "text": "Get a Troop Kill Score of 300 or higher with any unit in 0/8 Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.2.3.2",
+                                "text": "Use a trebuchet or interrupt a capture 0/8 times in Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.2.3.3",
+                                "text": "In Field or Siege Battles of any mode, get 0/40 kills or assists in total; or in 0/8 Field or Siege Battles of any mode, get 8 kills or assists.",
+                                "tags": [
+                                    "Field",
+                                    "Siege"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.2.3.4",
+                                "text": "Get 0/6 \"No Quarter\" or \"Grand Bloodbath\" badges in Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.2.3.5",
+                                "text": "Use artillery to kill 30 soldiers or 2 heroes in 0/8 Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.2.3.6",
+                                "text": "In Deathmatch, you or your group collectively kills a total of 0/100 heroes.",
+                                "tags": [
+                                    "Deathmatch"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.2.3.7",
+                                "text": "Complete 0/12 Daily Quests.",
+                                "tags": [
+                                    "General"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.2.3.8",
+                                "text": "Take part in 0/8 Territory War battles.",
+                                "tags": [
+                                    "Territory Wars"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.2.3.9",
+                                "text": "Join 0/8 Ranked Battles or win 0/8 Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Ranked"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.2.3.10",
+                                "text": "Achieve victory in 0/8 Bandit Raids.",
+                                "tags": [
+                                    "Bandit Raid"
+                                ],
+                                "conditions": []
+                            }
+                        ],
+                        "rewards": [
+                            {
+                                "text": "Halberd Elite Kit",
+                                "amount": 25
+                            },
+                            {
+                                "text": "Unit Medal",
+                                "amount": 70
+                            }
+                        ]
+                    },
+                    {
+                        "id": "24.2.4",
+                        "name": "Stage 4",
+                        "required": 8,
+                        "total": 10,
+                        "challenges": [
+                            {
+                                "id": "24.2.4.1",
+                                "text": "In 0/8 Field or Siege Battles of any mode, use [Halberd Elite] and get a Troop Kill score of 300 or higher.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.2.4.2",
+                                "text": "In Field or Siege Battles of any type, get a Troop Kill Score of 400 or higher with 0/10 units.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.2.4.3",
+                                "text": "Use a trebuchet or interrupt a capture 0/8 times in Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.2.4.4",
+                                "text": "Get the \"Hat-Trick\" or \"A Deadly Century\" badge in 0/7 Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.2.4.5",
+                                "text": "Use artillery to kill 30 soldiers or 2 heroes in 0/8 Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.2.4.6",
+                                "text": "You or your group collectively kills a total of 240 soldiers in 0/8 Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.2.4.7",
+                                "text": "Raise your hero up 0/10 levels.",
+                                "tags": [
+                                    "General"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.2.4.8",
+                                "text": "Complete 0/12 Daily Quests.",
+                                "tags": [
+                                    "General"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.2.4.9",
+                                "text": "Join 0/8 Ranked Battles or win 0/8 Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Ranked"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.2.4.10",
+                                "text": "Achieve victory in 0/8 Bandit Raids.",
+                                "tags": [
+                                    "Bandit Raid"
+                                ],
+                                "conditions": []
+                            }
+                        ],
+                        "rewards": [
+                            {
+                                "text": "Bloody Ennobling",
+                                "amount": null
+                            },
+                            {
+                                "text": "Unit Medal",
+                                "amount": 30
+                            }
+                        ]
+                    },
+                    {
+                        "id": "24.2.5",
+                        "name": "Stage 5",
+                        "required": 8,
+                        "total": 10,
+                        "challenges": [],
+                        "rewards": [
+                            {
+                                "text": "Halberd Elite Avatar",
+                                "amount": null
+                            },
+                            {
+                                "text": "Unit Medal",
+                                "amount": 30
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "24.3",
+                "name": "Empire Chariot",
+                "stages": [
+                    {
+                        "id": "24.3.1",
+                        "name": "Stage 1",
+                        "required": 10,
+                        "total": 12,
+                        "challenges": [
+                            {
+                                "id": "24.3.1.1",
+                                "text": "Earn 40 capture points or interrupt a capture in 0/10 Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.3.1.2",
+                                "text": "In Field or Siege Battles of any type, get a kill/death ratio of 1 or higher with any two units 0/10 times.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.3.1.3",
+                                "text": "Get a Troop Kill Score of 300 or higher with 0/12 units in Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.3.1.4",
+                                "text": "In Field or Siege Battles of any type, win 0/3 battles in a row or join 0/5 battles.",
+                                "tags": [
+                                    "Field",
+                                    "Siege"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.3.1.5",
+                                "text": "Use artillery to kill 0/160 soldiers or 0/10 heroes in Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.3.1.6",
+                                "text": "Earn 0/10 \"Shatter the Ranks\" badges.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.3.1.7",
+                                "text": "In Deathmatch, you or your group collectively kills a total of 0/150 heroes.",
+                                "tags": [
+                                    "Deathmatch"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.3.1.8",
+                                "text": "Raise your hero up 0/12 levels.",
+                                "tags": [
+                                    "General"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.3.1.9",
+                                "text": "Complete 0/15 Daily Quests.",
+                                "tags": [
+                                    "General"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.3.1.10",
+                                "text": "Earn 0/10 \"Cakewalk\" badges during PVE battles.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles",
+                                    "Bandit Raid",
+                                    "Expedition"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.3.1.11",
+                                "text": "Defeat 0/1,500 enemy units in PVE battles",
+                                "tags": [
+                                    "Bandit Raid",
+                                    "Expedition"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.3.1.12",
+                                "text": "Join 0/10 Ranked Battles or win 0/10 Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Ranked"
+                                ],
+                                "conditions": []
+                            }
+                        ],
+                        "rewards": [
+                            {
+                                "text": "Unit Medal",
+                                "amount": 30
+                            }
+                        ]
+                    },
+                    {
+                        "id": "24.3.2",
+                        "name": "Stage 2",
+                        "required": 10,
+                        "total": 12,
+                        "challenges": [
+                            {
+                                "id": "24.3.2.1",
+                                "text": "Get a kill/death ratio of 1.5 or higher with any unit in 0/10 Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.3.2.2",
+                                "text": "Get a Troop Kill Score of 300 or higher with 0/12 units in Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.3.2.3",
+                                "text": "Get 0/50 total kills or assists in Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.3.2.4",
+                                "text": "Join 0/10 Free Battles or win 0/10 Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.3.2.5",
+                                "text": "Use artillery to kill 0/160 soldiers or 0/10 heroes in Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.3.2.6",
+                                "text": "Get the \"Hat-Trick\" or \"A Deadly Century\" badge in 0/9 Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.3.2.7",
+                                "text": "You or your group members get 0/20 A+ or better ratings in Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.3.2.8",
+                                "text": "Raise your hero up 0/12 levels.",
+                                "tags": [
+                                    "General"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.3.2.9",
+                                "text": "Take part in 0/10 Territory War battles.",
+                                "tags": [
+                                    "Territory Wars"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.3.2.10",
+                                "text": "Defeat 0/1,500 enemy units in PVE battles",
+                                "tags": [
+                                    "Bandit Raid",
+                                    "Expedition"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.3.2.11",
+                                "text": "Win 0/15 PVE battles",
+                                "tags": [
+                                    "Bandit Raid",
+                                    "Expedition"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.3.2.12",
+                                "text": "Get a Troop Kill Score of 600 or more in 0/10 Ranked battles, or get a Troop Kill Score of 1000 or more in 0/10 Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles",
+                                    "Ranked"
+                                ],
+                                "conditions": []
+                            }
+                        ],
+                        "rewards": [
+                            {
+                                "text": "Right Guard",
+                                "amount": null
+                            },
+                            {
+                                "text": "The guards can knock back enemies to protect the chariot",
+                                "amount": null
+                            },
+                            {
+                                "text": "Unit Medal",
+                                "amount": 30
+                            }
+                        ]
+                    },
+                    {
+                        "id": "24.3.3",
+                        "name": "Stage 3",
+                        "required": 10,
+                        "total": 12,
+                        "challenges": [
+                            {
+                                "id": "24.3.3.1",
+                                "text": "In Field or Siege Battles of any type, win 0/3 battles in a row or join 0/5 battles.",
+                                "tags": [
+                                    "Field",
+                                    "Siege"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.3.3.2",
+                                "text": "In Field or Siege Battles of any type, get a kill/death ratio of 1 or higher with any two units 0/10 times.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.3.3.3",
+                                "text": "Join 0/10 Deathmatches or win 0/10 Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Deathmatch"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.3.3.4",
+                                "text": "In Field or Siege Battles of any mode, get 0/50 kills or assists in total; or in 0/10 Field or Siege Battles of any mode, get 8 kills or assists.",
+                                "tags": [
+                                    "Field",
+                                    "Siege"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.3.3.5",
+                                "text": "Use artillery to kill 30 soldiers or 2 heroes in 0/10 Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.3.3.6",
+                                "text": "Earn 0/10 \"Shatter the Ranks\" badges.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.3.3.7",
+                                "text": "In Field or Siege Battles of any type, you or your group members get 0/50 B+ or better ratings or get 0/10 A+ or better ratings.",
+                                "tags": [
+                                    "Field",
+                                    "Siege"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.3.3.8",
+                                "text": "Complete 0/15 Daily Quests.",
+                                "tags": [
+                                    "General"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.3.3.9",
+                                "text": "Search 0/15 loot sites in the open world.",
+                                "tags": [
+                                    "Open World"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.3.3.10",
+                                "text": "Defeat 0/1,500 enemy units in PVE battles",
+                                "tags": [
+                                    "Bandit Raid",
+                                    "Expedition"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.3.3.11",
+                                "text": "Win 0/15 PVE battles",
+                                "tags": [
+                                    "Bandit Raid",
+                                    "Expedition"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.3.3.12",
+                                "text": "Join 0/10 Ranked Battles or win 0/10 Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Ranked"
+                                ],
+                                "conditions": []
+                            }
+                        ],
+                        "rewards": [
+                            {
+                                "text": "Unit Medal",
+                                "amount": 150
+                            }
+                        ]
+                    },
+                    {
+                        "id": "24.3.4",
+                        "name": "Stage 4",
+                        "required": 10,
+                        "total": 12,
+                        "challenges": [
+                            {
+                                "id": "24.3.4.1",
+                                "text": "In Field or Siege Battles of any type, win 0/3 battles in a row or join 0/5 battles.",
+                                "tags": [
+                                    "Field",
+                                    "Siege"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.3.4.2",
+                                "text": "Destroy a siege engine or acquire 40 capture points in 0/10 Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.3.4.3",
+                                "text": "Join 0/10 Deatchmatches or get the \"Quad Kill\" badge 0/9 times in Field or Siege battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.3.4.4",
+                                "text": "Get an A rating or better in 0/10 Free battles, or get an A+ rating or better in 0/10 Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.3.4.5",
+                                "text": "Deploy or destroy an artillery piece in 0/10 Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.3.4.6",
+                                "text": "Earn 0/10 \"Shatter the Ranks\" badges.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.3.4.7",
+                                "text": "You or your group collectively kills a total of 8 heroes in 0/10 Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.3.4.8",
+                                "text": "Defeat a band of rebels 0/15 times in the open world.",
+                                "tags": [
+                                    "Open World"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.3.4.9",
+                                "text": "Complete 0/15 Fief Quests.",
+                                "tags": [
+                                    "Open World"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.3.4.10",
+                                "text": "Geta kill/death ratio of 1.5 or higher with any unit in 0/10 Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.3.4.11",
+                                "text": "Earn 0/10 \"Cakewalk\" badges during PVE battles.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles",
+                                    "Bandit Raid",
+                                    "Expedition"
+                                ],
+                                "conditions": []
+                            },
+                            {
+                                "id": "24.3.4.12",
+                                "text": "Defeat 0/30 heroes in Ranked battles, or get the \"Grand Bloodbath\" badge 0/6 times in Field or Siege Battles of any type.",
+                                "tags": [
+                                    "Field",
+                                    "Siege",
+                                    "Free Battles",
+                                    "Ranked"
+                                ],
+                                "conditions": []
+                            }
+                        ],
+                        "rewards": [
+                            {
+                                "text": "Empire Chariot Kit",
+                                "amount": 1
+                            },
+                            {
+                                "text": "Unit Medal",
+                                "amount": 80
+                            }
+                        ]
+                    },
+                    {
+                        "id": "24.3.5",
+                        "name": "Stage 5",
+                        "required": 10,
+                        "total": 12,
+                        "challenges": [],
+                        "rewards": [
+                            {
+                                "text": "Unit Medal",
+                                "amount": 240
+                            }
+                        ]
+                    },
+                    {
+                        "id": "24.3.6",
+                        "name": "Stage 6",
+                        "required": 10,
+                        "total": 12,
+                        "challenges": [],
+                        "rewards": [
+                            {
+                                "text": "Axle Blade",
+                                "amount": null
+                            },
+                            {
+                                "text": "The enemies sliced by the axle blade suffer extra bleeding damage",
+                                "amount": null
+                            },
+                            {
+                                "text": "Unit Medal",
+                                "amount": 40
+                            }
+                        ]
+                    },
+                    {
+                        "id": "24.3.7",
+                        "name": "Stage 7",
+                        "required": 10,
+                        "total": 12,
+                        "challenges": [],
+                        "rewards": [
+                            {
+                                "text": "Empire Chariot Avatar",
+                                "amount": null
+                            },
+                            {
+                                "text": "Unit Medal",
+                                "amount": 40
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
     }
 ]

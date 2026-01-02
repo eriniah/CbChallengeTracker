@@ -298,5 +298,57 @@
         "requiredStage": "22.2.3"
       }
     ]
+  },
+  {
+    "id": 23,
+    "sections": [
+      {
+        "id": "23.2",
+        "requiredStage": "23.1.2"
+      },
+      {
+        "id": "23.3",
+        "requiredStage": "23.2.3"
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "sections": [
+      {
+        "id": "24.2",
+        "requiredStage": "24.1.2"
+      },
+      {
+        "id": "24.3",
+        "requiredStage": "24.2.3"
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "sections": [
+      {
+        "id": "25.2",
+        "requiredStage": "25.1.2"
+      },
+      {
+        "id": "25.3",
+        "requiredStage": "25.2.3"
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "sections": [
+      {
+        "id": "26.2",
+        "requiredStage": "26.1.2"
+      },
+      {
+        "id": "26.3",
+        "requiredStage": "26.2.3"
+      }
+    ]
   }
 ]

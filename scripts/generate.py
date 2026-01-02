@@ -174,8 +174,11 @@ if __name__ == "__main__":
 
     seasons_dict = []
     for season_id in ids:
-        season_dict = get_season_dict(season_id)
-        seasons_dict.append(season_dict)
+        try:
+            season_dict = get_season_dict(season_id)
+            seasons_dict.append(season_dict)
+        except Exception:
+            print(f"Failed to parse season ${season_id}")
 
     with open('./challenges.json', 'w') as output:
         json.dump(seasons_dict, output, indent=4)
